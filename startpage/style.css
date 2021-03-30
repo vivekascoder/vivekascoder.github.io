@@ -1,0 +1,110 @@
+:root {
+    --background: #282a36;
+    --current-line: #44475a;
+    --background-alt: #44475a;
+    --foreground: #f8f8f2;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+@font-face {
+    font-family: 'Iosevka';
+    src: url("./Iosevka.ttf") format("truetype");
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Iosevka";
+}
+
+body {
+    background: var(--background);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fg-yellow {color: var(--yellow)}
+.fg-red {color: var(--red)}
+.fg-pink {color: var(--pink)}
+.fg-cyan {color: var(--cyan)}
+
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+ul {list-style: none;}
+ul li {padding: 0.3rem 0;}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toplist {
+    padding: 3rem 4rem;
+    margin: 1rem;
+    border: 2px solid var(--cyan);
+    border-radius: 4px;
+}
+.tops {
+    display: inline-block;
+}
+.tops .toplist {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#query {
+    background-color: var(--background);
+    color: var(--foreground);
+    border: 2px solid var(--cyan);
+    padding: 0.6rem 1rem;
+    padding-left: 2.5rem;
+    border-radius: 2rem;
+    outline: none;
+    transition: 100ms all ease-in-out;
+    width: 100%;
+    box-sizing: border-box;
+}
+.box {
+    width: 100%;
+}
+#query:hover {
+    /* filter: drop-shadow(0 0 5px #8be8fd7e)
+            drop-shadow(0 0 20px #8be8fd7e); */
+    background-color: var(--background-alt);
+}
+.search {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+.box {
+    position: relative;
+}
+.box i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 0.8rem;
+    font-size: 1.1rem;
+}
+li a {
+    display: inline-block;
+}
+.copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+#search_logo {
+    margin-right: 0.5rem;
+    font-style: normal;
+    font-size: 2.5rem;
+}
