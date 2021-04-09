@@ -108,3 +108,30 @@ li a {
     font-style: normal;
     font-size: 2.5rem;
 }
+.auto-complete { 
+    position: absolute;
+    border: 2px solid var(--cyan);
+    background-color: var(--background);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    left: 1rem;
+    margin-top: -2px;
+}
+.auto-complete .engine {
+    padding: 0.1rem 1rem;
+    color: var(--foreground);
+    display: flex;
+    align-items: center;
+}
+.auto-complete .engine .logo {
+    font-size: 2.5rem;
+}
+.auto-complete .engine .name {
+    margin-left: 1rem;
+}
+span.selected{
+    background-color: var(--cyan);
+    /* padding: 0.1rem 0.2rem; */
+    color: var(--background);
+    border-radius: 2px;
+}

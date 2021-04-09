@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Homepage</title>
+
 </head>
+
 <body>
     <div class="tops">
         <div class="wrapper search">
-                <span class="box">
+            <span class="box">
                     <i class="fg-cyan" id="search_logo"> </i>
                     <input type="text" name="search" id="query" autocomplete="off">
+                    <div class="auto-complete" id="auto-complete">
+                    </div>
                 </span>
         </div>
         <div class="wrapper">
@@ -59,6 +64,8 @@
         </a>
     </span>
 
-    <script src="./script.js"></script>
+    <script src="./loadSearchEngines.js"></script>
+    <script src="./script.js" defer></script>
 </body>
+
 </html>

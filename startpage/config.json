@@ -1,0 +1,73 @@
+{
+    "defaultEngine": {
+        "icon": " ",
+        "url": "https://www.google.com/search?q="
+    },
+    "searchEngines": {
+        "yt": {
+            "icon": " ", 
+            "name": "Youtube",
+            "url": "https://www.youtube.com/results?search_query="
+        },
+        "g": {
+            "icon": " ", 
+            "name": "Google",
+            "url": "https://www.google.com/search?q="
+        },
+        "gt": {
+            "icon": " ",
+            "name": "Github",
+            "url": "https://github.com/search?q="
+        },
+        "red": {
+            "icon": " ", 
+            "name": "Reddit",
+            "url": "https://www.reddit.com/search/?q="
+        },
+        "dj": {
+            "icon": " ",
+            "name": "Django",
+            "url": "https://docs.djangoproject.com/en/3.1/search/?q="
+        },
+        "py": {
+            "icon": " ", 
+            "name": "Python Docs",
+            "url": "https://docs.python.org/3/search.html?q="
+        },
+        "tw": {
+            "icon": " ",
+            "name": "Twitter",
+            "url": "https://twitter.com/search?q="
+        },
+        "arch": {
+            "icon": " ",
+            "name": "Arch Wiki",
+            "url": "https://wiki.archlinux.org/index.php?search="
+        },
+        "js": {
+            "icon": " ",
+            "name": "Javascript",
+            "url": "https://developer.mozilla.org/en-US/search?q="
+        }
+    },
+    "topsStes": [
+        [
+            {"r/unixporn": "https://www.reddit.com/r/unixporn/"},
+            {"Github": "https://github.com/"},
+            {"Hackernews": "https://news.ycombinator.com/"},
+            {"Discord": "https://discord.com/app"}
+        ],
+        [
+            {"r/unixporn": "https://www.reddit.com/r/unixporn/"},
+            {"Github": "https://github.com/"},
+            {"Hackernews": "https://news.ycombinator.com/"},
+            {"Discord": "https://discord.com/app"}
+        ],
+        [
+            {"r/unixporn": "https://www.reddit.com/r/unixporn/"},
+            {"Github": "https://github.com/"},
+            {"Hackernews": "https://news.ycombinator.com/"},
+            {"Discord": "https://discord.com/app"}
+        ]
+    ]
+}
