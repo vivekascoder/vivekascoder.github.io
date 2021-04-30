@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./tailwind.css">
-  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+  <link rel="stylesheet" href="../tailwind.css">
+  <!-- <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen"> -->
   <title>🖥️ vivekascoder</title>
 </head>
 <body class="min-h-screen bg-gray-900">
   <div class="shadow-xl fixed w-full bg-gray-900 border-b-2 border-gray-700 border-opacity-25 ">
-    <div id="navbar" class="container mx-auto relative h-14 bg-gray-900 flex justify-between items-center group">
-      <span class="font-bold px-4 uppercase text-gray-300 text-xl cursor-pointer">vivekascoder<span class="ml-1 text-xs rounded-full bg-pink-600 group-hover:bg-pink-700 p-2">🖥️</span></span>
-      <div id="menu" class="sm:hidden text-semibold text-gray-300 cursor-pointer md:h-full md:flex z-40 items-stretch sm:absolute md:static sm:top-full sm:left-0 sm:right-0 md:bg-transparent sm:bg-gray-600">
+    <div id="navbar" class="container mx-auto relative z-50 h-14 bg-gray-900 flex justify-between items-center group">
+      <span class="font-bold px-4 uppercase text-gray-300 sm:text-sm md:text-xl cursor-pointer">vivekascoder<span class="ml-1 text-xs rounded-full bg-pink-600 group-hover:bg-pink-700 md:p-2 sm:p-1.5">🖥️</span></span>
+      <div id="menu" class="sm:hidden text-semibold text-gray-300 cursor-pointer md:h-full md:flex items-stretch sm:absolute md:static sm:top-full sm:left-0 sm:right-0 md:bg-transparent sm:bg-gray-600 z-50">
         <span class="transition duration-100 ease-in-out font-semibold px-4 hover:bg-pink-700 sm:p-4 flex items-center">💌 Home</span>
         <a href="#course" class="transition duration-100 ease-in-out font-semibold px-4 hover:bg-pink-700 sm:p-4 flex items-center">🚟 Courses</a>
         <a href="https://twitter.com/vivekascoder" target="_blank" class="transition duration-100 ease-in-out font-semibold px-4 hover:bg-pink-700 sm:p-4 flex items-center">☎️ Contact</a>
@@ -23,7 +23,7 @@
 
   <div class="flex bg-gray-800 items-center sm:justify-evenly sm:flex-col md:flex-row md:justify-center py-20 pb-28">
     <div>
-      <h1 class="text-white font-bold text-4xl md:px-20">Learn Tailwindcss,<br>
+      <h1 class="text-white font-bold sm:text-center md:text-left md:text-4xl sm:text-2xl md:px-20">Learn Tailwindcss,<br>
         And Make <br>
         Beautiful Websites.</h1>
     </div>
@@ -32,51 +32,46 @@
     </div>
   </div>
 
-  <div class="bg-gray-900 px-8 py-20 flex justify-center sm:w-11/12 md:w-2/3 mx-auto shadow-xl -mt-20 rounded-lg overflow-hidden">
+  <div class="bg-gray-900 sm:px-4 md:px-8 py-20 flex justify-center sm:w-11/12 md:w-2/3 mx-auto shadow-xl -mt-20 rounded-lg overflow-hidden">
     <div>
       <h1 class="text-white font-bold text-2xl mb-10 text-center">Join the 📰 newsletter, <br>And never miss any 📢 Notification.</h1>
       <form action="https://send.pageclip.co/jsQVY0Odf058FhJx4bVhhLVBAwwBbGWw/tail-email" class="relative inline pageclip-form" method="post" id="emailForm">
-        <input type="email" name="email" class="py-2 px-4 rounded-full bg-gray-100 text-lg text-gray-600 font-semibold focus:outline-none hover:bg-gray-200 focus:ring-4 focus:ring-white focus:ring-opacity-25 pr-36 w-full" placeholder="example@gmail.com" id="email"/>
-        <button type="submit" id="badge" class="bg-pink-600 absolute right-3 top-1/2 transform -translate-y-1/2 px-6 py-2 rounded-full font-semibold text-gray-200 cursor-pointer hover:bg-pink-500 uppercase text-sm">💌 Subscribe</button>
+        <input type="email" name="email" class="py-2 px-4 rounded-full bg-gray-100 sm:text-base md:text-lg text-gray-600 font-semibold focus:outline-none hover:bg-gray-200 focus:ring-4 focus:ring-white focus:ring-opacity-25 pr-36 w-full" placeholder="example@gmail.com" id="email"/>
+        <button type="submit" id="badge" class="bg-pink-600 absolute sm:right-1 md:right-3 top-1/2 transform -translate-y-1/2 px-6 py-2 rounded-full font-semibold text-gray-200 cursor-pointer hover:bg-pink-500 uppercase sm:text-xs md:text-sm">💌 Subscribe</button>
       </form>
     </div>
   </div>
 
-  <div class="lg:w-6/12 md:w-8/12 sm:w-10/12 mx-auto my-10 mt-20" id="course">
-    <a target="_blank" href="https://www.youtube.com/watch?v=a7fOgWLcDNg" class="bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 px-10 py-2 rounded-md my-4 flex items-center">
-      <span class="text-white text-xl font-semibold flex-1">Tailwindcss Tutorial #1 Intro & Setup.</span>
-      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full ml-10">🆕 NEW</span>
+  <div class="lg:w-6/12 md:w-8/12 sm:w-11/12 mx-auto my-10 mt-20" id="course">
+    <a href="#!" class="inline-block text-xl text-white font-semibold mb-4 bg-gradient-to-r from-green-400 to-blue-500 pr-6 pl-2 py-2 rounded-r-full">📽️ Released Videos</a>
+    <a target="_blank" href="https://www.youtube.com/watch?v=a7fOgWLcDNg" class="bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 sm:px-4 md:px-10 py-2 rounded-md my-4 flex items-center">
+      <span class="text-white sm:text-base md:text-xl font-semibold flex-1">Tailwindcss Tutorial #1 Intro & Setup.</span>
+      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full sm:ml-4 md:ml-10">🆕 NEW</span>
     </a>
-    <a target="_blank" href="https://www.youtube.com/watch?v=rMjHFspITCk" class="bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 px-10 py-2 rounded-md my-4 flex items-center">
-      <span class="text-white text-xl font-semibold flex-1">Tailwindcss Tutorial #2 Beautiful Buttons.</span>
-      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full ml-10">🆕 NEW</span>
+    <a target="_blank" href="https://www.youtube.com/watch?v=rMjHFspITCk" class="bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 sm:px-4 md:px-10 py-2 rounded-md my-4 flex items-center">
+      <span class="text-white sm:text-base md:text-xl font-semibold flex-1">Tailwindcss Tutorial #2 Beautiful Buttons.</span>
+      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full sm:ml-4 md:ml-10">🆕 NEW</span>
     </a>
-    <!-- Tailwindcss Tutorial #3 Making Badges with Simple utility classes. -->
-    <a target="_blank" href="https://www.youtube.com/watch?v=9jQxk2RV94o" class="bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 px-10 py-2 rounded-md my-4 flex items-center">
-      <span class="text-white text-xl font-semibold flex-1">Tailwindcss Tutorial #3 Making simple badges.</span>
-      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full ml-10">🆕 NEW</span>
+    <a target="_blank" href="https://www.youtube.com/watch?v=9jQxk2RV94o" class="bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 sm:px-4 md:px-10 py-2 rounded-md my-4 flex items-center">
+      <span class="text-white sm:text-base md:text-xl font-semibold flex-1">Tailwindcss Tutorial #3 Making Badges with Simple utility classes.</span>
+      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full sm:ml-4 md:ml-10">🆕 NEW</span>
     </a>
-    <!-- Tailwindcss Tutorial #4 Using SVG icons using tailwind. -->
-    <a target="_blank" href="https://www.youtube.com/watch?v=C6Emp6KpB_I" class="bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 px-10 py-2 rounded-md my-4 flex items-center">
-      <span class="text-white text-xl font-semibold flex-1">Tailwindcss Tutorial #4 Using SVG icons using tailwind.</span>
-      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full ml-10">🆕 NEW</span>
+    <a target="_blank" href="https://www.youtube.com/watch?v=C6Emp6KpB_I" class="bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 sm:px-4 md:px-10 py-2 rounded-md my-4 flex items-center">
+      <span class="text-white sm:text-base md:text-xl font-semibold flex-1">Tailwindcss Tutorial #4 Using SVG icons using tailwind.</span>
+      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full sm:ml-4 md:ml-10">🆕 NEW</span>
     </a>
-    <a target="_blank" href="https://www.youtube.com/watch?v=C6Emp6KpB_I" class="bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 px-10 py-2 rounded-md my-4 flex items-center">
-      <span class="text-white text-xl font-semibold flex-1">Tailwindcss Tutorial #5 hover,focus and group-hover.</span>
-      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full ml-10">🆕 NEW</span>
+    <a target="_blank" href="https://www.youtube.com/watch?v=kUaTLtMn7aE" class="bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 sm:px-4 md:px-10 py-2 rounded-md my-4 flex items-center">
+      <span class="text-white sm:text-base md:text-xl font-semibold flex-1">Tailwindcss Tutorial #5 hover,focus and group-hover..</span>
+      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full sm:ml-4 md:ml-10">🆕 NEW</span>
     </a>
-    <a target="_blank" href="" class="bg-gradient-to-r from-gray-700 to-gray-800 px-10 py-2 rounded-md my-4 flex items-center">
-      <span class="text-white text-xl font-semibold flex-1">Tailwindcss Tutorial #5 Create a responsive Navbar.</span>
-      <span class="text-white text-xs font-semibold tracking-wider bg-pink-600 px-5 py-1.5 rounded-full ml-10">🆕 UPCOMING</span>
-    </a>
-    <a target="_blank" href="" class="bg-gradient-to-r from-gray-700 to-gray-800 px-10 py-2 rounded-md my-4 flex items-center">
-      <span class="text-white text-xl font-semibold flex-1">Tailwindcss Tutorial #5 Create beautiful cards.</span>
-      <span class="text-white text-xs font-semibold tracking-wider bg-pink-600 px-5 py-1.5 rounded-full ml-10">🆕 UPCOMING</span>
+    <a href="#!" class="bg-gradient-to-r from-gray-800  to-gray-700 sm:px-4 md:px-10 py-2 rounded-md my-4 flex items-center">
+      <span class="text-white sm:text-base md:text-xl font-semibold flex-1">Tailwindcss Tutorial #6 Making responsive Navbar.</span>
+      <span class="text-white text-xs font-semibold tracking-wider bg-gray-800 px-5 py-1.5 rounded-full sm:ml-4 md:ml-10">💥 WIP</span>
     </a>
   </div>
 
   <footer class="p-4 bg-gray-800">
-    <p class="text-gray-200 text-lg font-semibold text-center">Created and maintained by <a class="text-pink-300" href="https://twitter.com/vivekascoder">💥 @vivekascoder</a></p>
+    <p class="text-gray-200 md:text-lg sm:text-base font-semibold text-center">Created and maintained by <a class="text-pink-300" href="https://twitter.com/vivekascoder">💥 @vivekascoder</a></p>
   </footer>
   <div id="notification" class="fixed bottom-2 bg-gray-700 rounded-r-full p-4 hidden items-center space-x-4" >
     <h3 class="font-semibold text-xl text-white">Thanks 🙏 for joining the 💌 newsletter.</h3>
@@ -87,11 +82,12 @@
     </span>
   </div>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
     * {
-      font-family: 'Anonymous Pro';
+      font-family: 'Anonymous Pro', monospace;
     }
   </style>
-  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+  <!-- <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script> -->
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
       var menuBtn = document.querySelector("#menuBtn")
@@ -139,6 +135,29 @@
 
       // }
     });
+    function getWidth() {
+      return Math.max(
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.documentElement.clientWidth
+      );
+    }
+
+    // function getHeight() {
+    //   return Math.max(
+    //     document.body.scrollHeight,
+    //     document.documentElement.scrollHeight,
+    //     document.body.offsetHeight,
+    //     document.documentElement.offsetHeight,
+    //     document.documentElement.clientHeight
+    //   );
+    // }
+
+    // console.log('Width:  ' +  getWidth() );
+    // console.log('Height: ' + getHeight() );
+    // document.getElementById("haha").innerHTML = `${getWidth()}, ${getHeight()}`
   </script>
 </body>
 </html>
