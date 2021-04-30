@@ -557,9 +557,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 360px) {
   .container {
-    max-width: 640px;
+    max-width: 360px;
   }
 }
 
@@ -13969,7 +13969,7 @@ video {
 }
 
 .max-w-screen-sm {
-  max-width: 640px;
+  max-width: 360px;
 }
 
 .max-w-screen-md {
@@ -31177,14 +31177,14 @@ video {
           animation: bounce 1s infinite;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 360px) {
   .sm\:container {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 360px) {
     .sm\:container {
-      max-width: 640px;
+      max-width: 360px;
     }
   }
 
@@ -44594,7 +44594,7 @@ video {
   }
 
   .sm\:max-w-screen-sm {
-    max-width: 640px;
+    max-width: 360px;
   }
 
   .sm\:max-w-screen-md {
@@ -61729,9 +61729,9 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 360px) {
     .md\:container {
-      max-width: 640px;
+      max-width: 360px;
     }
   }
 
@@ -75141,7 +75141,7 @@ video {
   }
 
   .md\:max-w-screen-sm {
-    max-width: 640px;
+    max-width: 360px;
   }
 
   .md\:max-w-screen-md {
@@ -92276,9 +92276,9 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 360px) {
     .lg\:container {
-      max-width: 640px;
+      max-width: 360px;
     }
   }
 
@@ -105688,7 +105688,7 @@ video {
   }
 
   .lg\:max-w-screen-sm {
-    max-width: 640px;
+    max-width: 360px;
   }
 
   .lg\:max-w-screen-md {
@@ -122823,9 +122823,9 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 360px) {
     .xl\:container {
-      max-width: 640px;
+      max-width: 360px;
     }
   }
 
@@ -136235,7 +136235,7 @@ video {
   }
 
   .xl\:max-w-screen-sm {
-    max-width: 640px;
+    max-width: 360px;
   }
 
   .xl\:max-w-screen-md {
@@ -153370,9 +153370,9 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 360px) {
     .\32xl\:container {
-      max-width: 640px;
+      max-width: 360px;
     }
   }
 
@@ -166782,7 +166782,7 @@ video {
   }
 
   .\32xl\:max-w-screen-sm {
-    max-width: 640px;
+    max-width: 360px;
   }
 
   .\32xl\:max-w-screen-md {
