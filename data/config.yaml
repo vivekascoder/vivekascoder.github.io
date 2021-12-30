@@ -1,12 +1,11 @@
-name: Jacky Zhao
+name: Vivek Kumar
 enableToc: true
-description:
-  Here is the page description. This is an example Quartz site that details installation,
-  setup, customization, and troubleshooting for Quartz itself.
-page_title:
-  "🪴 Quartz v3"
+description: A place to keep all my notes and articles.
+page_title: "🪴 Vivek's Garden"
 links:
   - link_name: Twitter
-    link: https://twitter.com/_jzhao
+    link: https://twitter.com/vivekascoder
   - link_name: Github
-    link: https://github.com/jackyzha0
+    link: https://github.com/vivekascoder
+  - link_name: Youtube
+    link: https://youtube.com/c/vivekascoder

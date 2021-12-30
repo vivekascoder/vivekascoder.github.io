@@ -1,25 +1,30 @@
 ---
-title: 🪴 Quartz 3
+title: 🪴 Vivek's Garden
 ---
-Host your second brain and [digital garden](https://jzhao.xyz/posts/digital-gardening) for free. Quartz features
-1. Extremely fast full-text search by pressing `/`
-2. Beautiful, out-of-the-box website creation and deployment
-3. Display for backlinks of each note
-4. A customizable graph view
-5. Endlessly powerful page and theme customization
-6. Automatically generated tag and section lists of content
 
-## Get Started
-> 📚 [Setup your own digital garden using Quartz](notes/setup.md)
+This is a place where I keep all my notes and articles as well, you'll find here resources/articles around web dev, devops, blockchain etc.
 
-Not convinced yet? Look at some [community digital gardens](moc/showcase) built with Quartz, or read about [why I made Quartz](notes/philosophy.md) to begin with!
+## Writings
+
+> [👨‍🏭 Who AM I ?](/me.md)
+
+The following are some articles I wrote, check it out.
+
+- [⚽️ Code a On-Chain game on Tezos](/articles/on-chain-game.md)
+- [🧑🏽‍💻 Code DEX on Tezos](/articles/dex.md)
+- [🍦 Setup Code Server using NginX](/articles/code-server-nginx.md)
+- [📦 Use remote postgre DB with Django](/articles/remote-postgre-django.md)
 
 ## Content Lists
+
 If you prefer browsing the contents of this site through a list instead of a graph, you can find content lists here too:
 
-- [All Notes](/notes)
-- [Setup-related Notes](/tags/setup)
+- [📚 All Notes](/notes)
+- [🏷 All Tags](/tags)
+- [📝 All Articles](/articles)
+- [👩‍🍳 Cookbook](/cookbook)
 
 ## Troubleshooting
+
 - 🚧 [Troubleshooting and FAQ](notes/troubleshooting.md)
 - 🐛 [Submit an Issue](https://github.com/jackyzha0/quartz/issues)

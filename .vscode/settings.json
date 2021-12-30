@@ -1,0 +1,16 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/Thumbs.db": true,
+        "**/.DS_Store": true,
+        "**/public": true,
+        "**/resources": true,
+        "**/.idea": true,
+        "**/content/.obsidian": true,
+        "**/data/linkIndex.yaml": true,
+        "**/data/contentIndex.yaml": true
+    }
+}
