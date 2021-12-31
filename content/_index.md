@@ -22,9 +22,4 @@ If you prefer browsing the contents of this site through a list instead of a gra
 - [📚 All Notes](/notes)
 - [🏷 All Tags](/tags)
 - [📝 All Articles](/articles)
-- [👩‍🍳 Cookbook](/cookbook)
-
-## Troubleshooting
-
-- 🚧 [Troubleshooting and FAQ](notes/troubleshooting.md)
-- 🐛 [Submit an Issue](https://github.com/jackyzha0/quartz/issues)
+- [👩‍🍳 Cookbook](/notes/cookbook)
