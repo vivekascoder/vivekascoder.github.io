@@ -33,4 +33,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: main # deploying branch
-          cname: notes.vivek.biz
+          cname: garden.vivek.biz
