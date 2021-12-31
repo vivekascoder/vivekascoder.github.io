@@ -1,6 +1,3 @@
-# Quartz
-Host your own second brain and digital garden for free.
+# Garden
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
-
-🔗 Get Started: https://quartz.jzhao.xyz/
+This is my digital garden, where you'll find my articles, notes and other stuff.
