@@ -23,3 +23,4 @@ If you prefer browsing the contents of this site through a list instead of a gra
 - [🏷 All Tags](/tags)
 - [📝 All Articles](/articles)
 - [👩‍🍳 Cookbook](/notes/cookbook)
+- [🔗 Bookmarks](/bookmarks)
