@@ -5,3 +5,6 @@ help: ## Show all Makefile targets
 
 serve: ## serve
 	hugo-obsidian -input=content -output=data -index -root=. && hugo server
+
+push:
+	git add . && git commit -m "Updated on $(data)" && git push
