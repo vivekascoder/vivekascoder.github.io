@@ -18,3 +18,4 @@ title: "Bookmarks"
 - https://www.florin-pop.com/timeline
 - https://blog.polygon.technology/all-you-need-to-know-about-the-recent-network-upgrade/
 - https://d-core.net/defi-2-0-is-here-a-true-innovation-or-a-fad/
+- https://opensource.com/article/18/8/what-how-makefile

@@ -10,3 +10,10 @@ Some of the stuff that I would like to buy next year.
 2. [GoPro](https://www.amazon.in/GoPro-Black-CHDHX-801-Action-Camera/dp/B07WSRXMS8/)
 3. [Keychron K2](https://keychron.in/product/keychron-k2-v-2/)
 4. ~~M1 Macbook~~
+
+## Things to write about
+
+1. Write an article on FA2 token standard.
+2. Write an article on using firebase cloud functions.
+3. Write an article on coding a DAO on Tezos.
+4. Write an article on using makefiles and learn more about them on the way.
