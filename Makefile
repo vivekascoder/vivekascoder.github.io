@@ -7,4 +7,4 @@ serve: ## serve
 	hugo-obsidian -input=content -output=data -index -root=. && hugo server
 
 push:
-	git add . && git commit -m "Updated on $(data)" && git push origin main
+	git add . && git commit -m "Updated on $(date)" && git push origin main

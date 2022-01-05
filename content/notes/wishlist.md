@@ -17,3 +17,10 @@ Some of the stuff that I would like to buy next year.
 2. Write an article on using firebase cloud functions.
 3. Write an article on coding a DAO on Tezos.
 4. Write an article on using makefiles and learn more about them on the way.
+
+## Things to learn
+
+1. Three.js
+2. Rust
+3. GoLang
+4. Solana
