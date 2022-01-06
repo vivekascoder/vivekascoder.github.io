@@ -12,5 +12,5 @@
         "**/content/.obsidian": true,
         "**/data/linkIndex.yaml": true,
         "**/data/contentIndex.yaml": true
-    }
+    },
 }
