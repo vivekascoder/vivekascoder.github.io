@@ -12,3 +12,7 @@ I like sleek and simple design, I ovbiously love animation but I prefer web desi
 
 2. https://nishantchandla.xyz/
    Look at the background 3d scroll animation, prob. done using threejs.
+
+## Some useful library
+
+- [React Toastify](https://www.npmjs.com/package/react-toastify)
