@@ -42,7 +42,7 @@ favicon = "/icon/favicon.png"
 
 copyright = "Vivek"
 
-ga = "G-6YGDB8SLBT"
+# ga = "G-6YGDB8SLBT"
 
 [extra.translations]
 languages = [{name = "en", url = "/"}]
