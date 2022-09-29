@@ -1,0 +1,76 @@
+# The URL the site will be built for
+base_url = "https://blog.vivek.biz"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+title = "⛓ Vivek"
+description = "Here is going to be short description about blog?"
+
+theme = "archie-zola"
+generate_feed = true
+
+
+taxonomies = [
+    {name = "tags", feed = true},
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "gruvbox-dark"
+
+[extra]
+author = "Vivek"
+# after_dark_menu = [
+#     {url = "$BASE_URL", name = "Home"},
+#     {url = "$BASE_URL/categories", name = "Categories"},
+#     {url = "$BASE_URL/tags", name = "Tags"},
+# ]
+# after_dark_title = "🌈 I am Vivek"
+# control dark mode: auto | dark | toggle
+mode = "toggle"
+
+# interal CDN resource
+useCDN = false
+
+favicon = "/icon/favicon.png"
+
+copyright = "Vivek"
+
+ga = "G-6YGDB8SLBT"
+
+[extra.translations]
+languages = [{name = "en", url = "/"}]
+
+[[extra.translations.en]]
+show_more = "Read more ⟶"
+previous_page = "← Previous"
+next_page = "Next →"
+posted_on = "on "
+posted_by = "Published by"
+read_time = "minute read"
+all_tags = "All tags"
+menus = [
+    { name = "Home", url = "/", weight = 2 },
+    { name = "All posts", url = "/posts", weight = 2 },
+    { name = "About", url = "/about", weight = 3 },
+    { name = "Tags", url = "/tags", weight = 4 },
+]
+
+# config social icon info in the footer
+[[extra.social]]
+icon = "github"
+name = "GitHub"
+url = "https://github.com/vivekascoder/"
+
+[[extra.social]]
+icon = "twitter"
+name = "Twitter"
+url = "https://github.com/0xStateMachine/"
+
+
