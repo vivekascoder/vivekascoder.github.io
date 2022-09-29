@@ -13,16 +13,3 @@ jobs:
           BUILD_DIR: .
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # BUILD_ONLY: true
-  build_and_deploy:
-    runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/main'
-    steps:
-      - name: "checkout"
-        uses: actions/checkout@v3.0.0
-      - name: "build and deploy"
-        uses: shalzz/zola-deploy-action@v0.16.1
-        env:
-          PAGES_BRANCH: master
-          BUILD_DIR: .
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPOSITORY: vivekascoder/vivekascoder.github.io
