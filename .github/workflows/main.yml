@@ -1,28 +1,18 @@
-on: push
+name: Zola on GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   build:
+    name: Publish site
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
     steps:
-      - name: "checkout"
+      - name: Checkout master branch
         uses: actions/checkout@v3.0.0
-      - name: "build"
+      - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.16.1
         env:
-          PAGES_BRANCH: gh-pages
-          BUILD_DIR: .
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # BUILD_ONLY: true
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        # If you're changing the branch from main,
-        # also change the `main` in `refs/heads/main`
-        # below accordingly.
-        if: ${{ github.ref == 'refs/heads/master' }}
-        env:
-          PAGES_BRANCH: gh-pages
-          BUILD_DIR: .
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
