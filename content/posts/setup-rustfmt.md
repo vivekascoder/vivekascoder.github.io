@@ -1,9 +1,13 @@
 +++
 title = "Setup RustFmt to format code"
 date = 2022-09-29
+description = "Learn how to use RustFmt instead of prettier in VSCode for your rust projects."
 
 [taxonomies]
 tags = ["rust"]
+
+[extra]
+# author = { name = "0xStateMachine", social= "https://github.com/vivekascoder" }
 
 +++
 
