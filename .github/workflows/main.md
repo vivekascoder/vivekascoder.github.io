@@ -1,3 +1,6 @@
+## Setup with gh-pages.
+
+```yml
 name: Zola on GitHub Pages
 
 on:
@@ -16,3 +19,4 @@ jobs:
         uses: shalzz/zola-deploy-action@v0.16.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
