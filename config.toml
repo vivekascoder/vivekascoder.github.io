@@ -84,4 +84,7 @@ icon = "twitter"
 name = "Twitter"
 url = "https://github.com/0xStateMachine/"
 
-
+[[extra.social]]
+icon = "youtube"
+name = "Twitch"
+url = "https://www.twitch.tv/0xvivek"
