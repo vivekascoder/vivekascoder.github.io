@@ -10,7 +10,7 @@ Aptos is a layer 2 modular execution layer for ethereum.
 
 ## Why are we scaling ethereum using layer 2.
 
-It always feel like ethereum is that layer 1 blockchain that everyone's trying so hard to scale but it's fundamentally meant to be slow. Shouldn't we try to put a lot of effort in improving the base layer instead of figuring out million ways to come up with various layer 2 and sidechain to scale it.
+It always feels like Ethereum is that layer 1 blockchain that everyone's trying so hard to scale but it's fundamentally meant to be slow. Shouldn't we try to put a lot of effort in improving the base layer instead of figuring out million ways to come up with various layer 2 and sidechain to scale it.
 
 ## Simplest smart contract development lifecycle on Fuel network.
 
