@@ -1,6 +1,6 @@
 +++
 title = "Exploring Fuel Network."
-description = "Join me in the quest of finding new and interesting web3 projects to build next billion dollar financial tools. Today, let's dive into fuel network."
+description = "Join me in the quest to find new and exciting web3 projects to build the next billion-dollar financial tools. Today, let's dive into the fuel network."
 date = 2022-10-14
 +++
 
