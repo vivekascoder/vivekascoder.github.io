@@ -1,5 +1,6 @@
 +++
 title = "LOG1: Experimenting with Aptos, Sui."
+description = "Info about move, Sui and Aptos that I'm gathering."
 date = 2022-10-11
 +++
 
