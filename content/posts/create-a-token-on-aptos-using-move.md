@@ -279,7 +279,7 @@ Now you'll get info about the transaction, in my case it was.
 
 You can see that the sender is the account that we've generated using `aptos init`. You can take a look at the transaction hash in the block explorer of Aptos network to know more about the transaction.
 
-To interact with the funtions with writing a lot of client side code, you can use this site that allows you to connect to your wallet and call any entry function from a module.
+To interact with the funtions without writing a lot of client side code, you can use this [site](https://aptos-module-explorer.vercel.app/) that allows you to connect to your wallet and call any entry function from a module.
 
 Import the account that you created from the cli by importing it's private key from the path `.aptos/config.yaml` and then connect wallet to this site.
 
@@ -296,7 +296,7 @@ To mint fill your address and amount you want to mint and sign the transaction. 
 <img src="/2022-10-22-21-53-14.png" width="300" />
 </center>
 
-> Petra wallet might has decimal issue?
+> Petra wallet might have some decimal issue?
 
 And finally you have your token in your wallet.
 
