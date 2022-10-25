@@ -44,6 +44,14 @@ Import the necessary modules that we'll use to write the module and define some 
 
 Let's define the resources for the coin and Coin capability the account that owns the capability resource will have access to call mint and burn functions which are going to be `@admin` in our case.
 
+```move
+struct CoinCapabilities has key {
+    mint_cap: coin::MintCapability<DogeCoin>,
+    burn_cap: coin::BurnCapability<DogeCoin>,
+    freeze_cap: coin::FreezeCapability<DogeCoin>
+}
+```
+
 > Note that addresses with `@` front of them are named addresses defined in the Move.toml file.
 
 This is how `Move.toml` looks like for this example.
@@ -107,6 +115,40 @@ Let's write a module constructor which will only be executed once during the dep
         );
         move_to(account, CoinCapabilities {mint_cap, burn_cap, freeze_cap});
 ...
+```
+
+## If you want to have a fixed supply.
+
+### Remove `mint_cap` from the resource.
+
+```move
+struct CoinCapabilities has key {
+    burn_cap: coin::BurnCapability<DogeCoin>,
+    freeze_cap: coin::FreezeCapability<DogeCoin>
+}
+```
+
+### Then destroy mint cap after minting the supply.
+
+```move
+fun init_module(account: &signer) {
+    let account_addr = signer::address_of(account);
+    is_admin(account_addr);
+    not_have_coin_capabilities(account_addr);
+
+    let (burn_cap, freeze_cap, mint_cap) = coin::initialize<DogeCoin>(
+        account,
+        string::utf8(b"Doge Coin"),
+        string::utf8(b"DOGE"),
+        18,
+        true
+    );
+
+    coin::mint<DogeCoin>(account_addr, mint_cap);
+    coin::destroy_mint_cap<DogeCoin>(mint_cap);
+
+    move_to(account, CoinCapabilities {burn_cap, freeze_cap});
+}
 ```
 
 It makes sure that the `account` is admin, initializes a coin and moves the `CoinCapability` resource to the `account` which is `@admin`.
