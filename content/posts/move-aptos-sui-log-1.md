@@ -2,6 +2,9 @@
 title = "LOG1: Experimenting with Aptos, Sui."
 description = "Info about move, Sui and Aptos that I'm gathering."
 date = 2022-10-11
+
+[taxonomies]
+tags = ["move", "aptos", "sui", "smart contracts", "blockchain"]
 +++
 
 ## What is move lang ?
@@ -37,10 +40,8 @@ module test_move::store {
 Yeah I know it looks a bit like rust, infact as I mentioned it's inspired by rust lang. It has rust's most important feature like borrow checking built into that that makes it more safer for writing smart contracts.
 If you want to use their typescript SDK to interact with Sui blockchain the following link might help.
 
-[https://github.com/MystenLabs/sui/blob/main/sdk/typescript/README.md](https://github.com/MystenLabs/sui/blob/main/sdk/typescript/README.md
-)
+[https://github.com/MystenLabs/sui/blob/main/sdk/typescript/README.md](https://github.com/MystenLabs/sui/blob/main/sdk/typescript/README.md)
 
 If you want to use sui web wallet to sign transaction and interact with the objects / contracts you'll find the following link useful.
 
 [https://github.com/MystenLabs/sui/blob/main/apps/wallet/examples/demo-nft-dapp/pages/index.js](https://github.com/MystenLabs/sui/blob/main/apps/wallet/examples/demo-nft-dapp/pages/index.js)
-

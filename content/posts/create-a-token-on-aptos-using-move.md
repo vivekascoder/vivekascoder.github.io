@@ -2,6 +2,9 @@
 title = "Create a Coin on Aptos using Move."
 description = "Let's learn how to deploy a coin on Aptos using Move lang and interact with it."
 date = 2022-10-22
+
+[taxonomies]
+tags = ["move", "aptos", "sui", "smart contracts", "blockchain"]
 +++
 
 ## Introduction

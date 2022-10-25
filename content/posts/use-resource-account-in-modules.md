@@ -2,6 +2,9 @@
 title = "Simple pattern to use resource account in move modules on Aptos"
 description = "Today we'll see how to simply use resource account in your move modules."
 date = 2022-10-26
+
+[taxonomies]
+tags = ["move", "aptos", "sui", "smart contracts", "blockchain"]
 +++
 
 ## Code

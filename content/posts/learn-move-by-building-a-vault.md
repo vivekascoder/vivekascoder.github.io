@@ -2,6 +2,9 @@
 title = "Learn Move on Aptos by building a Vault protocol."
 description = "In this article we'll see how to build a simple Vault where you can stake and unstake tokens and get LP tokens in return."
 date = 2022-10-22
+
+[taxonomies]
+tags = ["move", "aptos", "sui", "smart contracts", "blockchain"]
 +++
 
 ## Introduction
