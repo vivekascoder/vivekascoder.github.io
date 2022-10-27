@@ -262,6 +262,30 @@ module coin::dogecoinV2 {
 }
 ```
 
+## If you want to freeze a user's coinstore.
+
+We can freeze a user which will restrict him to interact with his coin, to implement this add these entry functions.
+
+```move
+public entry fun freeze_user(account: &signer, user: address) acquires CoinCapabilities {
+    let account_addr = signer::address_of(account);
+    is_admin(account_addr);
+    have_coin_capabilities(account_addr);
+
+    let freeze_cap = &borrow_global<CoinCapabilities>(@admin).freeze_cap;
+    coin::freeze_coin_store<DogeCoin>(user, freeze_cap);
+}
+
+public entry fun unfreeze_user(account: &signer, user: address) acquires CoinCapabilities {
+    let account_addr = signer::address_of(account);
+    is_admin(account_addr);
+    have_coin_capabilities(account_addr);
+
+    let freeze_cap = &borrow_global<CoinCapabilities>(@admin).freeze_cap;
+    coin::unfreeze_coin_store<DogeCoin>(user, freeze_cap);
+}
+```
+
 ## Publishing the module.
 
 To deploy the module, first type this command to generate an address that we can use to deploy using Aptos cli.
