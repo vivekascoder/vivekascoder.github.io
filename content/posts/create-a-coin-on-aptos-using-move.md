@@ -98,7 +98,7 @@ Let's write some helper functions that we'll need throughout the module.
 ...
 ```
 
-These functions are self-explanatory, ` is_admin`` checks if the passed address is admin or not,  `have_coin_capabilities`if the address has the`CoinCapabilities`resource and`not_have_coin_capabilities` checks the opposite of that.
+These functions are self-explanatory, `is_admin` checks if the passed address is admin or not, `have_coin_capabilities` if the address has the`CoinCapabilities` resource and `not_have_coin_capabilities` checks the opposite of that.
 
 Let's write a module constructor which will only be executed once during the deployment of the module.
 
