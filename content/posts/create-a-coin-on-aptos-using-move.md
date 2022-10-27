@@ -187,10 +187,13 @@ Similarly let's write a function that will allow anyone to burn tokens, feel fre
 
 ```move
 ...
-    public entry fun burn(coin: coin::Coin<DogeCoin>) acquires CoinCapabilities {
+    public entry fun burn(account: &signer, amount: u64) acquires CoinCapabilities {
+        // Withdraw from the user.
+        let coins = coin::withdraw<DogeCoin>(account, amount);
         let burn_cap = &borrow_global<CoinCapabilities>(@admin).burn_cap;
-        coin::burn<DogeCoin>(coin, burn_cap);
+        coin::burn<DogeCoin>(coins, burn_cap);
     }
+
 ...
 ```
 
@@ -255,10 +258,13 @@ module coin::dogecoinV2 {
         coin::register<DogeCoin>(account);
     }
 
-    public entry fun burn(coin: coin::Coin<DogeCoin>) acquires CoinCapabilities {
+    public entry fun burn(account: &signer, amount: u64) acquires CoinCapabilities {
+        // Withdraw from the user.
+        let coins = coin::withdraw<DogeCoin>(account, amount);
         let burn_cap = &borrow_global<CoinCapabilities>(@admin).burn_cap;
-        coin::burn<DogeCoin>(coin, burn_cap);
+        coin::burn<DogeCoin>(coins, burn_cap);
     }
+
 }
 ```
 
