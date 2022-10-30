@@ -1,7 +1,7 @@
 +++
 title = "Create a simple multisig in move lang."
 description = "Learn a bit of move by writing a simple multisig wallet."
-date = 2022-10-22
+date = 2022-10-31
 
 [taxonomies]
 tags = ["move", "aptos", "sui", "smart contracts", "blockchain"]
