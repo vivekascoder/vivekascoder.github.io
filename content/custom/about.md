@@ -4,11 +4,11 @@ date = 2022-09-29
 path = "about"
 +++
 
-I am a blockchain developer. I worked at [Instaraise](https://instaraise.io) as a blockchain developer for a while. I love 🏗 building things, they're mostly toy projects. I was a part of [Tezos India Fellowship 2.0](https://tif2.devfolio.co/), [Antler India Fellowship](https://www.antler.co/india-fellowship) and the most recently [Polygon India Fellowship](https://polygon.technology/polygon-fellowship/).
+I am a blockchain developer. I worked at [Instaraise](https://instaraise.io) as a blockchain developer for a while. I love 🏗 building things, they're mostly toy projects. I was a part of [Tezos India Fellowship 2.0](https://tif2.devfolio.co/), [Antler India Fellowship](https://www.antler.co/india-fellowship) and most recently [Polygon India Fellowship](https://polygon.technology/polygon-fellowship/).
 
-## 🏗 Creations
+## 🏗 Builds
 
-**[⚖️ Git DAO](https:/gitdao.app)**
+**[⚖️ Git DAO](https://gitdao.app)**
 
 Launch DAO for your Github repositories with a few clicks on polygon.
 

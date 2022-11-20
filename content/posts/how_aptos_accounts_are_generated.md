@@ -30,3 +30,16 @@ print(
     sep="\n"
 )
 ```
+
+<!--
+## Info on transaction
+
+So let's take a look at how transactions are submitted to the blockchain, I'll basically walk you through some code snippets from the typescript SDK that will walk you through lifecycle of transactions.
+
+### How does a transaction get submitted to the node?
+
+1. You create a raw transaction.
+`RawTransaction` needs to have the following
+
+2. You sign the transaction with your private key.
+3. You submit the transaction to the node. -->

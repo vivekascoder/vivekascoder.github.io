@@ -37,3 +37,5 @@ module pseudo_random::random {
     }
 }
 ```
+
+Use this instead, it's better https://github.com/pentagonxyz/movemate/blob/main/aptos/sources/pseudorandom.move
