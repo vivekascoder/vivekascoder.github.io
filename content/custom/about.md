@@ -4,6 +4,8 @@ date = 2022-09-29
 path = "about"
 +++
 
+<img src="/pepe.jpg" alt="Author" width="200">
+
 I am a blockchain developer, currently hacking 🛠 at [@SeaShrineNFT](https://twitter.com/SeaShrineNFT). I love 🏗 building things, they're mostly toy projects. I was a part of [Tezos India Fellowship 2.0](https://tif2.devfolio.co/), [Antler India Fellowship](https://www.antler.co/india-fellowship) and most recently [Polygon India Fellowship](https://polygon.technology/polygon-fellowship/). Currently actively building on [Aptos](https://aptoslabs.com/) and [Sui](https://sui.io/).
 
 ## 🏗 Builds
