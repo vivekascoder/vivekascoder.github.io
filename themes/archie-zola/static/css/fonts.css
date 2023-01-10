@@ -36,3 +36,10 @@
        url('../fonts/ibm-plex-mono-v6-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/ibm-plex-mono-v6-latin-500italic.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
 }
+
+@font-face {
+  font-family: 'Dank Mono';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/Dank\ Mono\ Regular.otf'); /* IE9 Compat Modes */
+}

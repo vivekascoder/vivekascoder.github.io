@@ -130,6 +130,11 @@ pre {
     line-height: 1.4;
     overflow-x: auto;
     padding: 1em;
+    font-family: 'Dank Mono';
+}
+
+pre > * {
+    font-family: 'Dank Mono';
 }
 
 .highlight pre ::selection {
