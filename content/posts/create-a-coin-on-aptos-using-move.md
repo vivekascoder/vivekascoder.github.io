@@ -9,6 +9,8 @@ tags = ["move", "aptos", "sui", "smart contracts", "blockchain"]
 
 ## Introduction
 
+> ⚠️ Please note that this is for reference of coin standard only and not meant to be used in production.
+
 Aptos is a layer 1 protocol that can provide very high throughput for your DAPPs, It can offer a max TPS of 160K (courtesy of block-STM) and a block time of 300ms. It was previously known as Libra, Diem. It uses Move as its programming language to write contracts. Move is a DSL based on rust just like sway on fuel.
 
 ## Installation
