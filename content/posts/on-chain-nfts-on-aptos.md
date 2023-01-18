@@ -2,6 +2,9 @@
 title = "How to create on-chain SVG NFTs on Aptos."
 description = "In this article, I'll walk you through the process of making on-chain SVG NFTs on Aptos using Move lang."
 date = 2023-01-08
+
+[taxonomies]
+tags = ["aptos", "move", "NFT"]
 +++
 
 ## Hmm, what is on-chain SVG NFT?
@@ -61,7 +64,7 @@ And this is going to be the url of our NFT and the value that be'll be using for
 
 We'll we need to first of all implement base64 in move in order to encode the text into base64, I personally reffered to [this article](https://nachtimwald.com/2017/11/18/base64-encode-and-decode-in-c/) to learn how to impplement base64 and here's the code in move for it.
 
-```rust
+```move
 module rangers::base64 {
     use std::string::{Self, String};
     use std::vector;
@@ -176,7 +179,9 @@ module rangers::base64 {
 
 We're gonna start by adding function to generate base64 encoded image from by inputing an number that'll be dynamically added to the SVG.
 
-```rust
+<!-- {{monaco()}} -->
+
+```move
 public fun to_string(value: u64): String {
     if (value == 0) {
         return string::utf8(b"0")
@@ -203,7 +208,7 @@ public fun generate_base64_image(i: u64): String {
 
 In the same way now'll write a function that'll take this encoded image and the same number to generate encoded json metadata url.
 
-```rust
+```move
 public fun generate_base64_metadata(img: String, i: u64): String {
     let metadata = string::utf8(b"{\"name\": \"Test Dynamic NFT #");
     string::append(&mut metadata, to_string(i));
@@ -223,7 +228,7 @@ Allright, now since that's out of our way now we can focus on actual move module
 
 The constructor will create a resource account for the deployer and store it in the `ResourceSigner` resource owned by the deployer. We'll need this resource account to create collection and mint NFT.
 
-```rust
+```move
 use aptos_framework::account::{Self, SignerCapability};
 
 struct ResourceSigner has key {
@@ -243,7 +248,7 @@ fun init_module(account: &signer) {
 
 Let's write function for allowing the deployer to create NFT collection and store necessary information in a resource.
 
-```rust
+```move
 struct MintingInfo has key {
     index: u64,
     base_name: String,
@@ -279,7 +284,7 @@ Now finally let's write a function that mints an NFT from our generated resource
 
 > 📝: This is the function you can modify to allow a certain amount of APT or any token to be paid in order for the caller to mint this NFT.
 
-```rust
+```move
 public entry fun mint_nft(account: &signer) acquires ResourceSigner, MintingInfo {
     let (resource, resource_addr) = resource_account();
     let minting_info = borrow_global_mut<MintingInfo>(@rangers);
@@ -319,7 +324,7 @@ public entry fun mint_nft(account: &signer) acquires ResourceSigner, MintingInfo
 
 And that's how you can create an on chain dynamic NFT module in move lang. To interact with the module you can write some move scripts.
 
-```rust
+```move
 script {
     use rangers::mint_dynamic_nft;
 
@@ -329,7 +334,7 @@ script {
 }
 ```
 
-```rust
+```move
 script {
     use rangers::mint_dynamic_nft;
 

@@ -1,0 +1,74 @@
+<div id="container">
+  <!-- Contaier for the monaco editor. -->
+</div>
+
+<style>
+  #container {
+    width: 100%;
+    height: 20rem;
+  }
+</style>
+
+<script src="https://unpkg.com/monaco-editor@0.17.0/min/vs/loader.js"></script>
+<script>
+  require.config({
+    paths: {
+      vs: "https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs",
+    },
+  });
+  console.log(">> Monaco loaded.");
+  const javascript = `//This is a test of the monaco editor.
+  //This is a test of the monaco editor.
+  function test() {
+    console.log(">> Test");
+  }
+  `;
+
+  const DEFAULT_EDITOR_OPTIONS = {
+    value: `${javascript}`,
+    lineNumbers: "on",
+    roundedSelection: false,
+    scrollBeyondLastLine: false,
+    ariaLabel: "online code editor",
+    accessibilityHelpUrl: "Nothing yet...",
+    readOnly: false,
+    theme: "vs-dark",
+    language: "move",
+    scrollBeyondLastLine: false,
+    //Resizes Based on Screen & Container Size.
+    automaticLayout: true,
+  };
+  function editorResize(editor) {
+    //Only Resizes when automaticLayout:?false
+    //const layoutOptions = {height: x, width: y};
+    //pass in layout object.
+    editor.layout();
+  }
+  //   Add syntax highlight for move with filename move.tmLanguage.json
+  const move = fetch("/json/move.tmLanguage.json")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(">> Move Syntax Highlight Loaded.");
+      return data;
+    });
+  console.log(move);
+
+  let editor;
+  const onCreated = (_editor) => {
+    editor = _editor; //set global ref
+    editorResize(_editor); // use global ref, pass it around do some stuff w.e
+  };
+  //Creating the editor & adding Event listeners.
+  require(["vs/editor/editor.main"], () => {
+    monaco.editor.onDidCreateEditor(onCreated);
+    monaco.languages.register({ id: "move" });
+    monaco.languages.setMonarchTokensProvider("move", move);
+    monaco.editor.create(
+      document.getElementById("container"),
+      DEFAULT_EDITOR_OPTIONS
+    );
+  });
+  //Supported Languages.
+  const supportedLanguages = ["razor", "javascript", "scss"];
+  const supportedThemes = ["light", "vs-dark", "hc-black"];
+</script>

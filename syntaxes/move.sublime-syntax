@@ -1,0 +1,597 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+scope: source.move
+name: Move
+file_extensions: move
+
+contexts:
+  main:
+    - include: address
+    - include: comments
+    - include: module
+    - include: script
+    - include: macros
+    - include: entry_fun
+    - include: fun
+    - include: comments
+    - include: macros
+    - include: import
+    - include: friend
+    - include: const
+    - include: struct
+    - include: entry_fun
+    - include: native_fun
+    - include: public_fun
+    - include: fun
+    - include: spec
+    - include: block
+  address:
+    - match: \b(address)\b
+      comment: Address block
+      captures:
+        1: storage.modifier.type.address.keyword.move
+      push:
+        - meta_scope: meta.address_block.move
+        - match: "(?<=})"
+          pop: true
+        - include: comments
+        - match: (?<=address)
+          comment: Address value/const
+          push:
+            - meta_scope: meta.address.definition.move
+            - match: "(?=[{])"
+              pop: true
+            - include: comments
+            - include: address_literal
+            - match: \b(\w+)\b
+              comment: Named Address
+              scope: entity.name.type.move
+        - include: module
+  address_literal:
+    - match: '\b(0x[A-Fa-f0-9][A-Fa-f0-9]{,31})\b'
+      comment: "16-byte (or shorter) hex address in Libra"
+      scope: support.constant.diem.address.move
+    - match: '\b(wallet1\w{38})'
+      comment: Bech32 with wallet1 prefix - Dfinance format
+      scope: support.constant.dfinance.address.move
+    - match: '\s([@]\w+)\b'
+      comment: Named address parameter (as build flag)
+      scope: support.constant.named.address.move
+  as:
+    - match: \b(as)\b
+      comment: Keyword as
+      scope: keyword.control.move
+  as-import:
+    - match: \b(as)\b
+      comment: Keyword as in import statement
+      scope: meta.import_as.move
+  assert:
+    - match: \b(assert)\b
+      comment: Assert built-in
+      scope: support.function.assert.move
+  block:
+    - match: "{"
+      comment: Block expression or definition
+      push:
+        - meta_scope: meta.block.move
+        - match: "}"
+          pop: true
+        - include: comments
+        - include: as
+        - include: mut
+        - include: let
+        - include: types
+        - include: assert
+        - include: literals
+        - include: control
+        - include: move_copy
+        - include: resource_methods
+        - include: module_access
+        - include: fun_call
+        - include: block
+  block-comments:
+    - match: '/\*[\*!](?![\*/])'
+      comment: Block documentation comment
+      push:
+        - meta_scope: comment.block.documentation.move
+        - match: \*/
+          pop: true
+    - match: /\*
+      comment: Block comment
+      push:
+        - meta_scope: comment.block.move
+        - match: \*/
+          pop: true
+  comments:
+    - include: line-comments
+    - include: block-comments
+  const:
+    - match: \b(const)\b
+      captures:
+        1: storage.modifier.const.move
+      push:
+        - meta_scope: meta.const.move
+        - match: ;
+          pop: true
+        - include: comments
+        - include: primitives
+        - include: vector
+        - include: literals
+        - match: '\b([\w_]+)\b'
+          scope: constant.other.move
+  control:
+    - match: \b(return|while|loop|if|else|break|continue|abort)\b
+      comment: Control flow
+      scope: keyword.control.move
+  entry_fun:
+    - match: \b(entry)\b
+      comment: "entry fun name() {}"
+      captures:
+        1: storage.modifier.entry.move
+      push:
+        - meta_scope: meta.entry_fun.move
+        - match: "(?<=})"
+          pop: true
+        - include: comments
+        - match: \b(native)\b
+          comment: entry native function
+          scope: storage.modifier.native.move
+        - match: \b(public)\b
+          comment: entry public function
+          scope: storage.modifier.public.move
+        - include: fun
+  friend:
+    - match: \b(friend)\b
+      captures:
+        1: storage.modifier.type.move
+      push:
+        - meta_scope: meta.friend.move
+        - match: ;
+          pop: true
+        - include: comments
+        - include: address_literal
+        - match: \b(\w+)\b
+          comment: Name of the imported module
+          scope: entity.name.type.module.move
+  fun:
+    - include: fun_signature
+    - include: fun_body
+  fun_body:
+    - match: "{"
+      comment: Function body
+      push:
+        - meta_scope: meta.fun_body.move
+        - match: "}"
+          pop: true
+        - include: comments
+        - include: import
+        - include: as
+        - include: mut
+        - include: let
+        - include: types
+        - include: assert
+        - include: literals
+        - include: control
+        - include: move_copy
+        - include: resource_methods
+        - include: self_access
+        - include: module_access
+        - include: fun_call
+        - include: block
+  fun_call:
+    - match: '\b(\w+)\s*(?:<[\w\s,]+>)?\s*[(]'
+      comment: Function call
+      captures:
+        1: entity.name.function.call.move
+      push:
+        - meta_scope: meta.fun_call.move
+        - match: "[)]"
+          pop: true
+        - include: comments
+        - include: resource_methods
+        - include: self_access
+        - include: module_access
+        - include: move_copy
+        - include: literals
+        - include: fun_call
+        - include: block
+        - include: mut
+        - include: as
+  fun_signature:
+    - match: \b(fun)\b
+      comment: Function signature
+      captures:
+        1: storage.modifier.fun.move
+      push:
+        - meta_scope: meta.fun_signature.move
+        - match: "(?=[;{])"
+          pop: true
+        - include: comments
+        - include: module_access
+        - include: types
+        - include: mut
+        - match: (?<=fun)
+          comment: Function name
+          push:
+            - meta_scope: meta.function_name.move
+            - match: "(?=[<(])"
+              pop: true
+            - include: comments
+            - match: \b(\w+)\b
+              scope: entity.name.function.move
+        - include: type_param
+        - match: "[(]"
+          comment: Parentheses
+          push:
+            - meta_scope: meta.parentheses.move
+            - match: "[)]"
+              pop: true
+            - include: comments
+            - include: self_access
+            - include: module_access
+            - include: types
+            - include: mut
+        - match: \b(acquires)\b
+          comment: Keyword acquires
+          scope: storage.modifier
+  import:
+    - match: \b(use)\b
+      captures:
+        1: storage.modifier.type.move
+      push:
+        - meta_scope: meta.import.move
+        - match: ;
+          pop: true
+        - include: comments
+        - include: address_literal
+        - include: as-import
+        - match: '\b([A-Z]\w*)\b'
+          comment: Uppercase entities
+          scope: entity.name.type.move
+        - match: "{"
+          comment: Module members
+          push:
+            - match: "}"
+              pop: true
+            - include: comments
+            - include: as-import
+            - match: '\b([A-Z]\w*)\b'
+              comment: Uppercase entities
+              scope: entity.name.type.move
+        - match: \b(\w+)\b
+          comment: Name of the imported module
+          scope: meta.entity.name.type.module.move
+  let:
+    - match: \b(let)\b
+      comment: Keyword let
+      scope: keyword.control.move
+  line-comments:
+    - match: //
+      comment: Single-line comment
+      push:
+        - meta_scope: comment.line.double-slash.move
+        - match: $
+          pop: true
+  literals:
+    - match: "0x[_a-fA-F0-9]+(?:[iu](?:8|16|32|64|size))?"
+      comment: Hex literal (still to find out)
+      scope: constant.numeric.hex.move
+    - match: '(?<!(?:\w|(?:(?<!\.)\.)))[0-9][_0-9]*(?:\.(?!\.)(?:[0-9][_0-9]*)?)?(?:[eE][+\-]?[_0-9]+)?(?:[u](?:8|64|128|))?'
+      comment: Numeric literal
+      scope: constant.numeric.move
+    - match: '\b(?:h)("[a-fA-F0-9]+")'
+      comment: Bytearray hex literal
+      captures:
+        1: constant.character.move
+    - match: \bb"
+      comment: ASCII Bytestring literal
+      push:
+        - meta_scope: meta.ascii_literal.move
+        - match: '"'
+          pop: true
+        - match: '\\[nrt\0"]'
+          comment: Special symbol escape
+          scope: constant.character.escape.move
+        - match: '\\x[a-fA-F0-9][A-Fa-f0-9]'
+          comment: HEX Escape
+          scope: constant.character.escape.hex.move
+        - match: '[\x00-\x7F]'
+          comment: ASCII Character
+          scope: string.quoted.double.raw.move
+    - match: 'x"([A-F0-9a-f]+)"'
+      comment: "vector<u8> as hex literal: x"
+      scope: meta.hex_literal.move
+      captures:
+        1: constant.numeric.hex.move
+    - match: \b(?:true|false)\b
+      comment: Booleans
+      scope: constant.language.boolean.move
+    - include: address_literal
+  macros:
+    - match: '#\[(?:[\w0-9=_\(\)\s"]+)\]'
+      scope: support.constant.macro.move
+  module:
+    - match: \b(module)\b
+      comment: Module definition
+      captures:
+        1: storage.modifier.type.move
+      push:
+        - meta_scope: meta.module.move
+        - match: "(?<=})"
+          pop: true
+        - include: comments
+        - match: (?<=module)
+          comment: Module name
+          push:
+            - match: "(?={)"
+              pop: true
+            - include: comments
+            - match: (?<=module)
+              comment: Module namespace / address
+              push:
+                - meta_scope: constant.other.move
+                - match: "(?=[(::){])"
+                  pop: true
+            - match: (?<=::)
+              comment: Module name
+              push:
+                - meta_scope: entity.name.type.move
+                - match: '(?=[\s{])'
+                  pop: true
+        - match: "{"
+          comment: Module scope
+          push:
+            - meta_scope: meta.module_scope.move
+            - match: "}"
+              pop: true
+            - include: comments
+            - include: macros
+            - include: import
+            - include: friend
+            - include: const
+            - include: struct
+            - include: entry_fun
+            - include: native_fun
+            - include: public_fun
+            - include: fun
+            - include: spec
+            - include: block
+  module_access:
+    - match: \b(\w+)::(\w+)\b
+      comment: Use of module type or method
+      scope: meta.module_access.move
+      captures:
+        1: meta.entity.name.type.accessed.module.move
+        2: entity.name.function.call.move
+  move_copy:
+    - match: \b(move|copy)\b
+      comment: Keywords move and copy
+      scope: variable.language.move
+  mut:
+    - match: (?<=&)(mut)\b
+      comment: "&mut reference"
+      scope: storage.modifier.mut.move
+  native_fun:
+    - match: \b(native)\b
+      comment: Native function
+      captures:
+        1: storage.modifier.native.move
+      push:
+        - meta_scope: meta.native_fun.move
+        - match: "(?<=[;}])"
+          pop: true
+        - include: comments
+        - match: \b(public)\b
+          comment: native public function
+          scope: storage.modifier.public.move
+        - match: \b(entry)\b
+          comment: native entry function
+          scope: storage.modifier.entry.move
+        - include: fun_signature
+  phantom:
+    - match: \b(phantom)\b
+      comment: Keyword phantom inside type parameters
+      scope: keyword.control.phantom.move
+  primitives:
+    - match: \b(u8|u16|u32|u64|u128|u256|address|bool|signer)\b
+      comment: Primitive types
+      scope: support.type.primitives.move
+  public_fun:
+    - match: \b(public)\b
+      comment: Public function
+      captures:
+        1: storage.modifier.public.move
+      push:
+        - meta_scope: meta.public_fun.move
+        - match: "(?<=[;}])"
+          pop: true
+        - include: comments
+        - match: \b(native)\b
+          comment: Public native function
+          scope: storage.modifier.native.move
+        - match: \b(entry)\b
+          comment: Public entry function
+          scope: storage.modifier.entry.move
+        - match: \(
+          comment: Script visibility
+          push:
+            - match: \)
+              pop: true
+            - include: comments
+            - match: \b(script|friend)\b
+              comment: Friend or Script visibility
+              scope: storage.modifier.public.script.move
+        - include: fun
+  resource_methods:
+    - match: \b(borrow_global|borrow_global_mut|exists|move_from|move_to_sender|move_to)\b
+      comment: Methods to work with resource
+      scope: support.function.typed.move
+  script:
+    - match: \b(script)\b
+      captures:
+        1: storage.modifier.script.move
+      push:
+        - meta_scope: meta.script.move
+        - match: "(?<=})"
+          pop: true
+        - include: comments
+        - match: "{"
+          comment: Script scope
+          push:
+            - meta_scope: meta.script_scope.move
+            - match: "}"
+              pop: true
+            - include: const
+            - include: comments
+            - include: import
+            - include: fun
+  self_access:
+    - match: \b(Self)::(\w+)\b
+      comment: Use of Self
+      scope: meta.self_access.move
+      captures:
+        1: variable.language.self.move
+        2: entity.name.function.call.move
+  spec:
+    - match: \b(spec)\b
+      captures:
+        1: storage.modifier.spec.move
+      push:
+        - meta_scope: meta.spec.move
+        - match: "(?<=[;}])"
+          pop: true
+        - match: \b(module|schema|struct|fun)
+          comment: Spec target
+          scope: storage.modifier.spec.target.move
+        - match: \b(define)
+          comment: Spec define inline
+          scope: storage.modifier.spec.define.move
+        - match: \b(\w+)\b
+          comment: Target name
+          scope: entity.name.function.move
+        - match: "{"
+          comment: Spec block
+          push:
+            - match: "}"
+              pop: true
+            - include: comments
+            - include: spec_block
+            - include: spec_types
+            - include: spec_define
+            - include: spec_keywords
+            - include: control
+            - include: fun_call
+            - include: literals
+            - include: types
+            - include: let
+  spec_block:
+    - match: "{"
+      comment: Spec block
+      push:
+        - meta_scope: meta.spec_block.move
+        - match: "}"
+          pop: true
+        - include: comments
+        - include: spec_block
+        - include: spec_types
+        - include: fun_call
+        - include: literals
+        - include: control
+        - include: types
+        - include: let
+  spec_define:
+    - match: \b(define)\b
+      comment: Spec define keyword
+      captures:
+        1: keyword.control.move.spec
+      push:
+        - meta_scope: meta.spec_define.move
+        - match: "(?=[;{])"
+          pop: true
+        - include: comments
+        - include: spec_types
+        - include: types
+        - match: (?<=define)
+          comment: Function name
+          push:
+            - match: "(?=[(])"
+              pop: true
+            - include: comments
+            - match: \b(\w+)\b
+              scope: entity.name.function.move
+  spec_keywords:
+    - match: \b(global|pack|unpack|pragma|native|include|ensures|requires|invariant|apply|aborts_if|modifies)\b
+      scope: keyword.control.move.spec
+  spec_types:
+    - match: \b(range|num|vector|bool|u8|u16|u32|u64|u128|u256|address)\b
+      comment: Spec-only types
+      scope: support.type.vector.move
+  struct:
+    - match: \b(struct)\b
+      captures:
+        1: storage.modifier.type.move
+      push:
+        - meta_scope: meta.struct.move
+        - match: "(?<=})"
+          pop: true
+        - include: comments
+        - match: (?<=struct)
+          comment: Struct definition
+          push:
+            - meta_scope: meta.struct_def.move
+            - match: "(?={)"
+              pop: true
+            - include: comments
+            - match: \b(has)\b
+              comment: Has Abilities
+              scope: keyword.control.ability.has.move
+            - match: \b(store|key|drop|copy)\b
+              comment: Ability
+              scope: entity.name.type.ability.move
+            - match: \b(\w+)\b
+              comment: Struct name
+              scope: entity.name.type.move
+            - include: type_param
+        - match: "{"
+          comment: Struct body
+          push:
+            - meta_scope: meta.struct_body.move
+            - match: "}"
+              pop: true
+            - include: comments
+            - include: self_access
+            - include: module_access
+            - include: types
+  type_param:
+    - match: <
+      comment: Generic type param
+      push:
+        - meta_scope: meta.generic_param.move
+        - match: ">"
+          pop: true
+        - include: comments
+        - include: phantom
+        - include: module_access
+        - match: \b(store|drop|key|copy)\b
+          comment: Trait-like condition
+          scope: entity.name.type.kind.move
+  types:
+    - include: primitives
+    - include: vector
+    - match: '\b([A-Z][A-Za-z_]+)\b'
+      comment: Capitalized type names
+      scope: entity.name.type
+    - match: '\b([A-Z_]+)\b'
+      comment: All-uppercase const literal
+      scope: constant.other.move
+  vector:
+    - match: \b(vector)<
+      captures:
+        1: support.type.vector.move
+      push:
+        - meta_scope: meta.vector.move
+        - match: ">"
+          pop: true
+        - include: primitives
+        - include: vector
