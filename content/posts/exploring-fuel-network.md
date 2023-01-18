@@ -36,7 +36,7 @@ https://marketplace.visualstudio.com/items?itemName=FuelLabs.sway-vscode-plugin
 
 ### Writing a simple contract that increment a variable.
 
-```sway
+```rust
 contract;
 
 storage {
