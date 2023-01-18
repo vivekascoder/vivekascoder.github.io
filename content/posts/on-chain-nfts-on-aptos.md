@@ -179,8 +179,6 @@ module rangers::base64 {
 
 We're gonna start by adding function to generate base64 encoded image from by inputing an number that'll be dynamically added to the SVG.
 
-<!-- {{monaco()}} -->
-
 ```move
 public fun to_string(value: u64): String {
     if (value == 0) {
