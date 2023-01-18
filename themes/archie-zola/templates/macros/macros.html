@@ -115,5 +115,46 @@
         {% endif %}
 
     </article>
+
+    <script
+        src="https://utteranc.es/client.js"
+        repo="vivekascoder/vivekascoder.github.io"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async
+    >
+    </script>
+    <!-- utterances -->
+    <script>
+        function waitForElm(selector) {
+            return new Promise(resolve => {
+                if (document.querySelector(selector)) {
+                    return resolve(document.querySelector(selector));
+                }
+
+                const observer = new MutationObserver(mutations => {
+                    if (document.querySelector(selector)) {
+                        resolve(document.querySelector(selector));
+                        observer.disconnect();
+                    }
+                });
+
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            });
+        }
+        waitForElm('div.utterances').then((elm) => {
+            console.log("> utterances loaded.")
+            let url = document.URL;
+            if (url.endsWith("/about")) {
+                document.querySelector("div.utterances").style.display = "none";
+            }
+        });
+    </script>
+
+
 </main>
 {% endmacro content %}

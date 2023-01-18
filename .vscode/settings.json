@@ -8,6 +8,7 @@
     "**/Thumbs.db": true,
     "**/public/": true
   },
+  "editor.formatOnSave": false,
   "grammarly.files.include": [
     "**/readme.md",
     "**/README.md",
