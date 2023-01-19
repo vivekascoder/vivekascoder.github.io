@@ -86,6 +86,10 @@ ol li {
     color:rgba(255, 255, 255, 0.6);
 }
 
+div.description {
+    color: #bd93f933 !important;
+}
+
 ul>li::before {
     content: "* ";
     font-weight: bold;
