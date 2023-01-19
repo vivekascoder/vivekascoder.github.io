@@ -26,6 +26,7 @@ contexts:
     - include: fun
     - include: spec
     - include: block
+    - include: let
   address:
     - match: \b(address)\b
       comment: Address block
