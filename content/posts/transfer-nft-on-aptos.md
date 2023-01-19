@@ -44,6 +44,7 @@ let token_id = token::create_token_id_raw(
 ## How to transfer NFTs?
 
 1. Using `direct_transfer`.
+
 This method is useful if you have access to the signer of receiver and sender. It doesn't require the receiver to do anything to receive the NFT as you'll see in other methods, the receiver either needs to claim the NFT or opt in for direct transfer.
 
 ```move
@@ -75,6 +76,7 @@ public entry fun transfer_with_opt_in(
 ```
 
 3. Using offer & claim.
+
 The token standard also offers a module called `token_transfers` that contains the functionality to offer an NFT to someone and the other person can claim it. It doesn't involve for the other person to opt in for direct transfer. The receiver needs to claim the NFT before they can receive it.
 
 ```move
