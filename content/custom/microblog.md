@@ -5,7 +5,7 @@ path = "microblog"
 +++
 
 ## 📅 2023-01-20
-For a few day I've been feeling very sleep all day because of my fucked up sleeping schedule. Try to fix it. I think I am more productive late night upto 2 AM and in the morning. So now I try to sleep at max 3AM and wake up around 11AM. I'll see how it goes.
+For a few day I've been feeling very sleepy all day because of my fucked up sleeping schedule. Trying to fix it. I think I am more productive during late night upto 2 AM and in the late morning. So now I trying to sleep at max 3AM and wake up around 11AM. Let's hope it'll fix my sleeping schedule.
 
 BTW this page looks like better way to write microblog than twitter. Although RN it's just a single markdown page, I'm thinking to make a folder and render that into a single page.
 
