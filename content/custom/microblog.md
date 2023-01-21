@@ -4,6 +4,9 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+## 📅 2023-01-21
+I'm happy cause I managed to wake up at the perfect time and feeling relatively better now. :)
+
 ## 📅 2023-01-20
 For a few day I've been feeling very sleepy all day because of my fucked up sleeping schedule. Trying to fix it. I think I am more productive during late night upto 2 AM and in the late morning. So now I trying to sleep at max 3AM and wake up around 11AM. Let's hope it'll fix my sleeping schedule.
 
