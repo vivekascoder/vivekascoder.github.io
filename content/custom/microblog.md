@@ -4,6 +4,12 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+
+## 📅 2023-01-26
+Started using 
+`⌥ + d` to directly go to the defination without using mouse and doing `⌘ + click` on the word. It's a very useful shortcut.
+
+
 ## 📅 2023-01-21
 I'm happy cause I managed to wake up at the perfect time and feeling relatively better now. :)
 
