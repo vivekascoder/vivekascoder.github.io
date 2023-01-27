@@ -4,6 +4,11 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+## 📅 2023-01-27
+This is my simple setup where I code.
+
+<img src="/img/setup.jpg" width="350" />
+
 
 ## 📅 2023-01-26
 Started using 
