@@ -4,6 +4,30 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+## 📅 2023-01-28
+```rust
+#[derive(Clone, Debug)]
+struct Node {
+    name: String,
+}
+
+fn main() {
+    let nodes = vec![Node {
+        name: "vivek".to_owned(),
+    }];
+    // Add a new element into this vec.
+    let new_nodes: Vec<Node> = nodes
+        .iter()
+        .cloned()
+        .chain(Some(Node {
+            name: "some".to_owned(),
+        }))
+        .collect();
+    println!("Hello, world! {:?}", new_nodes);
+}
+
+```
+
 ## 📅 2023-01-27
 This is my simple setup where I code.
 
