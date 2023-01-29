@@ -57,3 +57,14 @@ I'm tried to filter best channels from my YT subsriptions, will add more later a
 14. [https://0xparc.org/blog/procgen](https://0xparc.org/blog/procgen)
 15. [https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy](https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy)
 16. [https://uniswapv3book.com/](https://uniswapv3book.com/)
+
+## 🔤 Cool Monospace Fonts
+1. Dank Mono
+2. Fira Code
+2. Iosevka
+4. MonoLisa
+5. Operator Mono
+6. Cascadia Code
+7. Monaco
+8. PragmataPro for Powerline
+9. Jetbrains Mono
