@@ -4,6 +4,8 @@ date = 2023-01-29
 path = "lists"
 +++
 
+These are some of the links/bookmarks/lists around various topics, I haven't read/watched a lot of'em. If you have some links/bookmarks/lists, you can share here by creating a PR after adding it to this [file](https://github.com/vivekascoder/vivekascoder.github.io/blob/master/content/custom/lists.md).
+
 ## 🎬 Cool Youtube/Twitch Channels
 1. [Seán Kelleher](https://www.youtube.com/user/eZanmoto)
 2. [Uncle Scientiest](https://www.youtube.com/channel/UClnm0enwPt9iPWGZ5uh3Bfw)
@@ -43,3 +45,15 @@ I'm tried to filter best channels from my YT subsriptions, will add more later a
 2. [https://hackmd.io/@fiveoutofnine/Skl9eRbX9](https://hackmd.io/@fiveoutofnine/Skl9eRbX9)
 3. [https://johns.codes/blog/build-a-db/part01](https://johns.codes/blog/build-a-db/part01)
 4. [https://www.scattered-thoughts.net/](https://www.scattered-thoughts.net/)
+5. [https://thesephist.com/](https://thesephist.com/)
+6. [https://notes.eatonphil.com/](https://notes.eatonphil.com/)
+7. [https://mort.coffee/home/](https://mort.coffee/home/)
+8. [https://macoy.me/](https://macoy.me/)
+9. [https://dcgross.com/posts](https://dcgross.com/posts)
+10. [https://michaelnotebook.com/](https://michaelnotebook.com/)
+11. [https://nullprogram.com/about/](https://nullprogram.com/about/)
+12. [https://thorstenball.com/](https://thorstenball.com/)
+13. [https://research.swtch.com/](https://research.swtch.com/)
+14. [https://0xparc.org/blog/procgen](https://0xparc.org/blog/procgen)
+15. [https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy](https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy)
+16. [https://uniswapv3book.com/](https://uniswapv3book.com/)
