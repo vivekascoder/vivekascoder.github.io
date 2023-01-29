@@ -9,64 +9,64 @@ path = "microblog"
 Still can't figure out how to get rid of creating clones outside of the closures.
 
 ```rs
-    let updated_todo_title = use_state(|| "".to_string());
-    let selected_todo = use_context::<UseStateHandle<SelectedTodo>>().unwrap();
-    let cloned_selected_todo = (*selected_todo).clone();
-    let cloned_updated_todo_title = (*updated_todo_title).clone();
-    let a = updated_todo_title.clone();
-    let b = updated_todo_title.clone();
+let updated_todo_title = use_state(|| "".to_string());
+let selected_todo = use_context::<UseStateHandle<SelectedTodo>>().unwrap();
+let cloned_selected_todo = (*selected_todo).clone();
+let cloned_updated_todo_title = (*updated_todo_title).clone();
+let a = updated_todo_title.clone();
+let b = updated_todo_title.clone();
 
-    use_effect_with_deps(
-        move |_| {
-            log!("Changed!");
-            let value = match cloned_selected_todo.todo {
-                Some(todo) => todo.title,
-                None => "".to_string(),
-            };
+use_effect_with_deps(
+    move |_| {
+        log!("Changed!");
+        let value = match cloned_selected_todo.todo {
+            Some(todo) => todo.title,
+            None => "".to_string(),
+        };
 
-            b.clone().set(value);
-        },
-        (selected_todo.clone()),
-    );
+        b.clone().set(value);
+    },
+    (selected_todo.clone()),
+);
 ```
 
 There must be some way to ergonomically do this. Let's try to figure it out.
 
 ```rs
-    // God, please save me from this mess.
-    let update_todo_title_cloned_selected_todo = (*selected_todo).clone();
-    let update_todo_title_cloned_updated_todo_title = (*updated_todo_title).clone();
-    let handle_toggle_clone = handle_toggle.clone();
+// God, please save me from this mess.
+let update_todo_title_cloned_selected_todo = (*selected_todo).clone();
+let update_todo_title_cloned_updated_todo_title = (*updated_todo_title).clone();
+let handle_toggle_clone = handle_toggle.clone();
 
-    let update_todo_title = dispatch.reduce_mut_callback(move |todo_state| {
-        let selected_todo = update_todo_title_cloned_selected_todo.clone();
-        let updated_todo_title = update_todo_title_cloned_updated_todo_title.clone();
-        let todo = selected_todo.todo.unwrap();
+let update_todo_title = dispatch.reduce_mut_callback(move |todo_state| {
+    let selected_todo = update_todo_title_cloned_selected_todo.clone();
+    let updated_todo_title = update_todo_title_cloned_updated_todo_title.clone();
+    let todo = selected_todo.todo.unwrap();
 
-        todo_state.todos = todo_state
-            .todos
-            .iter()
-            .map(|t| {
-                if t.id == todo.id {
-                    Todo {
-                        id: t.id,
-                        title: updated_todo_title.clone(),
-                        completed: t.completed,
-                    }
-                } else {
-                    t.clone()
+    todo_state.todos = todo_state
+        .todos
+        .iter()
+        .map(|t| {
+            if t.id == todo.id {
+                Todo {
+                    id: t.id,
+                    title: updated_todo_title.clone(),
+                    completed: t.completed,
                 }
-            })
-            .collect();
+            } else {
+                t.clone()
+            }
+        })
+        .collect();
 
-        // Hide the dialog
-        handle_toggle_clone
-            .clone()
-            .emit(MouseEvent::new("click").unwrap());
+    // Hide the dialog
+    handle_toggle_clone
+        .clone()
+        .emit(MouseEvent::new("click").unwrap());
 
-        // Update in local storage
-        local_storage::update_todo_title(todo.id, updated_todo_title.clone()).unwrap();
-    });
+    // Update in local storage
+    local_storage::update_todo_title(todo.id, updated_todo_title.clone()).unwrap();
+});
 ```
 
 ## 📅 2023-01-28
