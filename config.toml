@@ -6,7 +6,9 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 title = "⛓ Vivek"
-description = "My lil site that contains some junk and some BS. Please don't check my microlog and lists page."
+description = "Hey you, welcome to my corner of the internet, I'm a sucker for computer softwares and minimilist design. I do programming prostitution to pay my bills." 
+
+# description = "Hey you, welcome to my corner of the internet, we've been blind folded by this modern world and their sophisticated, crappy web design standards when infact the true design lies in the most simple sites.
 
 theme = "archie-zola"
 generate_feed = true

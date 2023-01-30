@@ -10,10 +10,17 @@
 
         {% block main_content %}
         <main class="list">
-            <div class="site-description">
-                {% if config.description %}
-                    {{ config.description | markdown | safe }}
-                {% endif %}
+            <div style="display: flex; justify-content: center; align-items:center;">
+                <div style="max-width: 5rem;">
+                    <img class="no-border" src="https://gifypet.neocities.org/images/kitty.gif" alt="Gif">
+                    <!-- <img class="no-border" src="https://fauux.neocities.org/JJJjjjjdDDD.gif" alt="Gif"> -->
+                    
+                </div>
+                <div class="site-description" style="flex-grow: 1;">
+                    {% if config.description %}
+                        {{ config.description | markdown | safe }}
+                    {% endif %}
+                </div>
             </div>
 
             {%- if paginator %}

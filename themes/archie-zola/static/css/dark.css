@@ -93,6 +93,14 @@ a:hover {
 .site-description a:hover {
     color: black;
 }
+ol li {
+
+    color:rgba(255, 255, 255, 0.6);
+}
+
+div.description {
+    color:rgba(255, 255, 255, 0.6);
+}
 
 .tags a {
     border-bottom: 3px solid var(--darkMaincolor);
@@ -107,6 +115,13 @@ a:hover {
     color: white;
     text-decoration: none !important;
 }
+
+p {
+    /* font-family: 'Fira Sans', sans-serif; */
+    line-height: 1.5;
+    color:rgba(255, 255, 255, 0.6);
+}
+
 
 .header nav,
 .footer {

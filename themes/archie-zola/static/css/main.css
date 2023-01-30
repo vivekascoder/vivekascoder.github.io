@@ -1,6 +1,6 @@
 /* Markdown */
 :root {
-    --maincolor: #bd93f933;
+    --maincolor: #000000;
     --bordercl: rebeccapurple;
     --callouctcolor: dodgerblue;
     --hovercolor: navy;
@@ -43,12 +43,6 @@ body {
     color: #fff;
 }
 
-p {
-    /* font-family: 'Fira Sans', sans-serif; */
-    line-height: 1.5;
-    color:rgba(255, 255, 255, 0.6);
-}
-
 hr {
     border: 0;
     border-top: 3px dotted var(--bordercl);
@@ -81,23 +75,24 @@ ul {
 ul li {
     text-indent: -2ch;
 }
-ol li {
 
-    color:rgba(255, 255, 255, 0.6);
-}
-
-div.description {
-    color:rgba(255, 255, 255, 0.6);}
 
 ul>li::before {
     content: "* ";
     font-weight: bold;
 }
 
+ol li, div.description {
+    color:rgba(0, 0, 0, 0.6);
+}
+
 /* Images */
 img {
     border: 3px solid #ececec;
     max-width: 100%;
+}
+img.no-border {
+    border: none;
 }
 
 figure {
