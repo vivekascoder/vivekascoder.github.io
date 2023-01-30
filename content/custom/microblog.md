@@ -4,6 +4,9 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+## 📅 2023-01-30
+I'll be working on `meelf` a simple web server written in rust to create backend for `ye-todo`, wonder if I should stream while building it.
+
 ## 📅 2023-01-29
 
 Still can't figure out how to get rid of creating clones outside of the closures.
