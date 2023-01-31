@@ -10,11 +10,10 @@
 
         {% block main_content %}
         <main class="list">
-            <div style="display: flex; justify-content: center; align-items:center;">
-                <div style="max-width: 5rem;">
+            <div class="flex-box" style="display: flex; justify-content: center; align-items:center;">
+                <div class="gif-box" style="max-width: 5rem;">
                     <img class="no-border" src="https://gifypet.neocities.org/images/kitty.gif" alt="Gif">
                     <!-- <img class="no-border" src="https://fauux.neocities.org/JJJjjjjdDDD.gif" alt="Gif"> -->
-                    
                 </div>
                 <div class="site-description" style="flex-grow: 1;">
                     {% if config.description %}
@@ -22,6 +21,13 @@
                     {% endif %}
                 </div>
             </div>
+            <style>
+                @media only screen and (max-width: 600px) {
+                    .gif-box {
+                        display: none;
+                    }
+                }
+            </style>
 
             {%- if paginator %}
                 {%- set show_pages = paginator.pages -%}
