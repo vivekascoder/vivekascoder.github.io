@@ -4,6 +4,9 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+## 📅 2023-02-02
+I am thinking to maybe write a blog/static site generator in something like `leptos`. But got a lot of pending projects to do, primarily trying to work `meelf` and learn how to design simple web server. 
+
 ## 📅 2023-01-30
 I'll be working on `meelf` a simple web server written in rust to create backend for `ye-todo`, wonder if I should stream while building it.
 
