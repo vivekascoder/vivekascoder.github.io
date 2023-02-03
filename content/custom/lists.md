@@ -58,6 +58,7 @@ I'm tried to filter best channels from my YT subsriptions, will add more later a
 15. [https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy](https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy)
 16. [https://uniswapv3book.com/](https://uniswapv3book.com/)
 17. [https://steveklabnik.com/writing](https://steveklabnik.com/writing)
+18. [https://amasad.me/compilers](https://amasad.me/compilers)
 
 ## 🔤 Cool Monospace Fonts
 1. Dank Mono

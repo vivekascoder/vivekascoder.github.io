@@ -1,6 +1,6 @@
 +++
-title = "Lifechanging VSCode tips."
-description = "How to optimize your VSCode for 10x performance boost."
+title = "Life changing VSCode tips."
+description = "How to optimize your VSCode for 10x productivity boost."
 date = 2023-02-01
 
 [taxonomies]
@@ -38,6 +38,13 @@ Install this extension for Vim keybindings. This will help you to navigate throu
 
 Use Command + 1, Command + 2, Command + 3 to jump between split editors don't use mouse for that.
 
+Also use Command + 0 to to back and forth between the activity window.
+
+### Use Github Copilot.
+Github Copilot is an AI code completion tool that really helps you to write repetetive code. It's a good tool to have as a programmer, it costs aroung 10$/month.
+
 
 ## Conclusion
 Basically try to use keyboard shortcuts whenever possible and stop relying on mouse. This will help you to be more productive.
+
+
