@@ -9,6 +9,16 @@ IG, I can prolly dance if I am drunk enough.
 
 I slept yesterday for 2 days, yep my sleep schedules are fucked beyond recovery.
 
+I did have some updates on `meelf`.
+
+- It can serve different routes.
+- With raw text only RN.
+
+I made the repo private for now because I am very noob at rust and don't want other people to see my bad rust skills.
+
+I wrote this log from my phone’s browser and it wasn't so painful.
+
+
 ## 📅 2023-02-02
 I am thinking to maybe write a blog/static site generator in something like `leptos`. But got a lot of pending projects to do, primarily trying to work `meelf` and learn how to design simple web server. 
 
