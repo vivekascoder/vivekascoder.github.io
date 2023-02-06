@@ -7,8 +7,6 @@ path = "microblog"
 ## 📅 2023-02-07
 IG, I can prolly dance if I am drunk enough.
 
-I slept yesterday for 2 days, yep my sleep schedules are fucked beyond recovery.
-
 I did have some updates on `meelf`.
 
 - It can serve different routes.
