@@ -4,6 +4,11 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+## 📅 2023-02-07
+IG, I can prolly dance if I am drunk enough.
+
+I slept yesterday for 2 days, yep my sleep schedules are fucked beyond recovery.
+
 ## 📅 2023-02-02
 I am thinking to maybe write a blog/static site generator in something like `leptos`. But got a lot of pending projects to do, primarily trying to work `meelf` and learn how to design simple web server. 
 
