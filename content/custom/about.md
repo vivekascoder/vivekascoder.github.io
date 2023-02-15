@@ -8,6 +8,9 @@ path = "about"
 
 I am a blockchain developer, currently hacking 🛠 at [@SeaShrineNFT](https://twitter.com/SeaShrineNFT). I love 🏗 building things, they're mostly toy projects. I was a part of [Tezos India Fellowship 2.0](https://tif2.devfolio.co/), [Antler India Fellowship](https://www.antler.co/india-fellowship) and most recently [Polygon India Fellowship](https://polygon.technology/polygon-fellowship/). Currently actively building on [Aptos](https://aptoslabs.com/) and [Sui](https://sui.io/).
 
+## 💬 My discord
+Join my personal discord: [https://discord.gg/BdGjJdwGSV](https://discord.gg/BdGjJdwGSV)
+
 ## 🏗 Builds
 
 **[⚖️ Git DAO](https://gitdao.app)**
@@ -27,5 +30,7 @@ Create NFT tickets for your event with a few clicks on Tezos. Tickets can be res
 Launch your NFT collections without any BS on Tezos. These collections then can be listed on marketplaces like [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
 
 <br />
+
+## 🎧 Fav. artists.
 
 OnlyFans Page: [https://onlyfans.com/sfgj344](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
