@@ -145,7 +145,7 @@ fun init_module(account: &signer) {
         account,
         string::utf8(b"Doge Coin"),
         string::utf8(b"DOGE"),
-        18,
+        8,
         true
     );
 
