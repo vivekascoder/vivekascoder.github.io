@@ -199,7 +199,7 @@ Similarly let's write a function that will allow anyone to burn tokens, feel fre
 ...
 ```
 
-Boom, we're done with a bit of move code, this is what the complete module looks like.
+Boom, we're done with a bit of move code, this is what the complete module looks like. (Remember that aptos only have a maximum decimal of 8 if you type 18 you can´t mint more than about 10 tokens)
 
 ```move
 module coin::dogecoinV2 {
@@ -239,7 +239,7 @@ module coin::dogecoinV2 {
             account,
             string::utf8(b"Doge Coin"),
             string::utf8(b"DOGE"),
-            18,
+            8,
             true
         );
         move_to(account, CoinCapabilities {mint_cap, burn_cap, freeze_cap});
