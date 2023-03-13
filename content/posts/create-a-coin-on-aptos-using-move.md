@@ -103,6 +103,7 @@ Let's write some helper functions that we'll need throughout the module.
 These functions are self-explanatory, `is_admin` checks if the passed address is admin or not, `have_coin_capabilities` if the address has the `CoinCapabilities` resource and `not_have_coin_capabilities` checks the opposite of that.
 
 Let's write a module constructor which will only be executed once during the deployment of the module.
+(Remember that aptos only have a maximum decimal of 8 if you type 18 you can´t mint more than about 10 tokens)
 
 ```move
 ...
@@ -115,7 +116,7 @@ Let's write a module constructor which will only be executed once during the dep
             account,
             string::utf8(b"Doge Coin"),
             string::utf8(b"DOGE"),
-            18,
+            8,
             true
         );
         move_to(account, CoinCapabilities {mint_cap, burn_cap, freeze_cap});
@@ -145,7 +146,7 @@ fun init_module(account: &signer) {
         account,
         string::utf8(b"Doge Coin"),
         string::utf8(b"DOGE"),
-        18,
+        8,
         true
     );
 
@@ -199,7 +200,7 @@ Similarly let's write a function that will allow anyone to burn tokens, feel fre
 ...
 ```
 
-Boom, we're done with a bit of move code, this is what the complete module looks like.
+Boom, we're done with a bit of move code, this is what the complete module looks like. (Remember that aptos only have a maximum decimal of 8 if you type 18 you can´t mint more than about 10 tokens)
 
 ```move
 module coin::dogecoinV2 {
@@ -239,7 +240,7 @@ module coin::dogecoinV2 {
             account,
             string::utf8(b"Doge Coin"),
             string::utf8(b"DOGE"),
-            18,
+            8,
             true
         );
         move_to(account, CoinCapabilities {mint_cap, burn_cap, freeze_cap});
@@ -377,3 +378,9 @@ And finally, you have your token in your wallet.
 <center>
 <img src="/2022-10-22-21-54-57.png" width="300" />
 </center>
+
+### To verify the module type the following command.
+
+```bash
+aptos move publish
+```
