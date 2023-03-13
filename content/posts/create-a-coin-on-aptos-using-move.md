@@ -377,3 +377,4 @@ And finally, you have your token in your wallet.
 <center>
 <img src="/2022-10-22-21-54-57.png" width="300" />
 </center>
+To verify module (smartcontract) run command in terminal: aptos move prove
