@@ -4,6 +4,9 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+## 📅 2023-03-21
+Need to get back on track with my projects. I've been procrastinating a lot lately. I need to get back to my routine. Been doing a lot of traveling lately, it's fun.
+
 ## 📅 2023-02-07
 IG, I can prolly dance if I am drunk enough.
 
