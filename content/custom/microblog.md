@@ -4,6 +4,14 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+
+## 📅 2023-03-28
+
+First month of being digital nomad: [https://www.reddit.com/r/digitalnomad/comments/11aufmy/staying_in_jaipur_india_as_a_firsttime_digital/](https://www.reddit.com/r/digitalnomad/comments/11aufmy/staying_in_jaipur_india_as_a_firsttime_digital/)
+
+Second month of being digital nomad: 
+[https://www.reddit.com/r/digitalnomad/comments/1234n5w/the_second_month_of_being_a_digital_nomad_in_india/?utm_source=share&utm_medium=ios_app&utm_name=ioscss&utm_content=2&utm_term=3](https://www.reddit.com/r/digitalnomad/comments/1234n5w/the_second_month_of_being_a_digital_nomad_in_india/?utm_source=share&utm_medium=ios_app&utm_name=ioscss&utm_content=2&utm_term=3)
+
 ## 📅 2023-03-21
 Need to get back on track with my projects. I've been procrastinating a lot lately. I need to get back to my routine. Been doing a lot of traveling lately, it's fun.
 
