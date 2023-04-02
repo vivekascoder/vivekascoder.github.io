@@ -5,6 +5,10 @@ path = "microblog"
 +++
 
 
+## 📅 2023-04-02
+
+I finished Kafka on the shore today, it was deifnitely a good and addictive read. I am glad that guy forced me to read it as I was not much of a fiction reader. Let's see what's next.
+
 ## 📅 2023-03-28
 
 First month of being digital nomad: [https://www.reddit.com/r/digitalnomad/comments/11aufmy/staying_in_jaipur_india_as_a_firsttime_digital/](https://www.reddit.com/r/digitalnomad/comments/11aufmy/staying_in_jaipur_india_as_a_firsttime_digital/)
