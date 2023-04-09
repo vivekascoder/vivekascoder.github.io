@@ -72,6 +72,7 @@ menus = [
     { name = "Home", url = "/", weight = 2 },
     # { name = "All posts", url = "/posts", weight = 2 },
     { name = "Microblog", url = "/microblog", weight = 2 },
+    { name = "Nomading", url = "/nomading", weight = 2 },
     { name = "Lists", url = "/lists", weight = 2 },
     { name = "About", url = "/about", weight = 3 },
     { name = "Tags", url = "/tags", weight = 4 },
