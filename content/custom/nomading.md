@@ -15,3 +15,11 @@ This page contains information that I've came across through my nomading/backpac
 5. [Moustache - McLoed Ganj](https://www.booking.com/hotel/in/moustache-mcleodganj.en-gb.html) (0/10)
 6. [The hosteller - Bir](https://www.booking.com/hotel/in/mavro-bir.en-gb.html) (TBD)
 
+## Things to carry in your bag.
+
+TBD
+
+## Follow my journey on Instagram
+
+[@normievivek](https://www.instagram.com/normievivek/)
+
