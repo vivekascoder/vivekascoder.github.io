@@ -19,6 +19,9 @@ This page contains information that I've came across through my nomading/backpac
 
 TBD
 
+## Places I've been to
+[https://www.google.com/maps/d/u/0/edit?mid=1MRYV-6L58k94AcOHktkb2l1GeKMf4DY&usp=sharing](https://www.google.com/maps/d/u/0/edit?mid=1MRYV-6L58k94AcOHktkb2l1GeKMf4DY&usp=sharing)
+
 ## Follow my journey on Instagram
 
 [@normievivek](https://www.instagram.com/normievivek/)
