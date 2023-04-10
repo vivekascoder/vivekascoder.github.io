@@ -45,7 +45,7 @@ author = "Vivek"
 # ]
 # after_dark_title = "🌈 I am Vivek"
 # control dark mode: auto | dark | toggle
-mode = "toggle"
+mode = "dark"
 
 # interal CDN resource
 useCDN = false
@@ -69,13 +69,13 @@ posted_by = "Published by"
 read_time = "minute read"
 all_tags = "All tags"
 menus = [
-    { name = "Home", url = "/", weight = 2 },
+    { name = "🏠Home", url = "/", weight = 2 },
     # { name = "All posts", url = "/posts", weight = 2 },
-    { name = "Microblog", url = "/microblog", weight = 2 },
-    { name = "Nomading", url = "/nomading", weight = 2 },
-    { name = "Lists", url = "/lists", weight = 2 },
-    { name = "About", url = "/about", weight = 3 },
-    { name = "Tags", url = "/tags", weight = 4 },
+    { name = "✍️Microblog", url = "/microblog", weight = 2 },
+    { name = "🏖️Nomading", url = "/nomading", weight = 2 },
+    { name = "📝Lists", url = "/lists", weight = 2 },
+    { name = "🕵️About", url = "/about", weight = 3 },
+    { name = "🏷️Tags", url = "/tags", weight = 4 },
 ]
 
 # config social icon info in the footer
