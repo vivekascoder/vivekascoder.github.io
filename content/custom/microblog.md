@@ -4,6 +4,40 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+## 📅 2023-04-24
+
+**It's 2:09 AM**
+Getting bored at my place, should have done something fun this weeekend, But IG it's allright (IG). Toooooo booooored.
+
+Allright so sui has a very wierd arcitecture for smart contracts. Everything is an object, and since objects are unique every data structure is an NFT.
+
+It differs a lot from Aptos, although Aptos is also intriducing objects especially for their NFT standard. Another cool thing, Sui doesn't have an official NFT standard.
+
+So in order to implement capabilities in you module/smart contracts on Sui you'll need to have this pattern.
+
+```move
+module examples::item {
+    struct AdminCap has key { id: UID }
+    struct Item has key, store { id: UID, name: String }
+    fun init(ctx: &mut TxContext) {
+        transfer::transfer(AdminCap {
+            id: object::new(ctx)
+        }, tx_context::sender(ctx))
+    }
+
+    public entry fun create_and_send(
+        _: &AdminCap, name: vector<u8>, to: address, ctx: &mut TxContext
+    ) {
+        transfer::transfer(Item {
+            id: object::new(ctx),
+            name: string::utf8(name)
+        }, to)
+    }
+}
+```
+
+If you don't have `AdminCap` in your address, you won't be able to pass `create_and_send` and hense call it.
+
 ## 📅 2023-04-23
 
 **🤷** Just like my hairs, my whole life is falling apart.
