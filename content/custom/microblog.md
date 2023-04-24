@@ -6,6 +6,10 @@ path = "microblog"
 
 ## 📅 2023-04-24
 
+Felling pretty productive today, finally after so long. Gotta finish all the work.
+
+## 📅 2023-04-24
+
 **It's 2:09 AM**
 Getting bored at my place, should have done something fun this weeekend, But IG it's allright (IG). Toooooo booooored.
 
