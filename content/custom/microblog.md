@@ -4,6 +4,8 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+> This is a place to keep my microjournal. Personal opinions, plz don't get offended anon.
+
 ## 📅 2023-04-26
 Finally finished that issue with indexer, need to get my life in order ugh so much things that needs to be done. 
 
@@ -13,9 +15,11 @@ Finally finished that issue with indexer, need to get my life in order ugh so mu
 
 Not able to graduate from my college doesn't seem to be a distant possibility because I don't give a flying fuck.
 
-I failed in 2 subjects last sem, and I couldn't care less about it. Still remember the first day I went there and trust me when I say it, it's utter waste of time. It's only a place to socialize.
+I failed in 2 subjects last sem, and I couldn't care less about it. Still remember the first day I went there and trust me when I say it, it's utter waste of time. It's only a place to socialize. Didn't mean to sound rude but that's what I truly feel.
 
 I should prolly stay anon. here and write whatever I want.
+
+Absolutely in love with "Queen" band. "Bohemian Rhapsody" being one of my fav. classical rock.
 
 ## 📅 2023-04-24
 
