@@ -4,6 +4,19 @@ date = 2023-01-20
 path = "microblog"
 +++
 
+## 📅 2023-04-26
+Finally finished that issue with indexer, need to get my life in order ugh so much things that needs to be done. 
+
+**A term that can describe college pretty well?**
+
+> Circle Jerk
+
+Not able to graduate from my college doesn't seem to be a distant possibility because I don't give a flying fuck.
+
+I failed in 2 subjects last sem, and I couldn't care less about it. Still remember the first day I went there and trust me when I say it, it's utter waste of time. It's only a place to socialize.
+
+I should prolly stay anon. here and write whatever I want.
+
 ## 📅 2023-04-24
 
 Felling pretty productive today, finally after so long. Gotta finish all the work.
