@@ -6,6 +6,14 @@ path = "microblog"
 
 > This is a place to keep my microjournal. Personal opinions, plz don't get offended anon.
 
+## 📅 2023-04-29
+
+I think I might go for the college farewell, still having second thougts though. 
+
+It's always a good idea to not rely on other humans, again and again I've struggled whenever I've tried depending on others.
+
+Thinking about things which you don't have control over is utter waste of time.
+
 ## 📅 2023-04-26
 Finally finished that issue with indexer, need to get my life in order ugh so much things that needs to be done. 
 
