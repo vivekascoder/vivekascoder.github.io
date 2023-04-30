@@ -6,6 +6,14 @@ path = "microblog"
 
 > This is a place to keep my microjournal. Personal opinions, plz don't get offended anon.
 
+## 📅 2023-04-30
+
+Hmm, sometimes you don't rely on humans but they'll be there to help you. I'm too fortunate to have those friends around me. I would try to do the same for others. 
+
+And again don't bother trying to fix things which you don't have any control over.
+
+I should work hard and have fun really hard, but IDK it always comes at the expense of other's.
+
 ## 📅 2023-04-29
 
 I think I might go for the college farewell, still having second thougts though. 
