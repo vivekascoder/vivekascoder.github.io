@@ -6,6 +6,34 @@ path = "microblog"
 
 > This is a place to keep my microjournal. Personal opinions, plz don't get offended anon.
 
+## 📅 2023-05-06
+
+This is awesome looks like you can have -ve gas fee on Sui if the storage rebate is greater than the sum of computation cost and the storage fee.
+
+```rust
+/// Subtract the gas balance of \p gas_object by \p amount.
+/// This function should never fail, since we checked that the budget is always
+/// less than balance, and the amount is capped at the budget.
+pub fn deduct_gas(gas_object: &mut Object, charge_or_rebate: i64) {
+    // The object must be a gas coin as we have checked in transaction handle phase.
+    let gas_coin = gas_object.data.try_as_move_mut().unwrap();
+    let balance = gas_coin.get_coin_value_unsafe();
+    let new_balance = if charge_or_rebate < 0 {
+        balance + (-charge_or_rebate as u64)
+    } else {
+        assert!(balance >= charge_or_rebate as u64);
+        balance - charge_or_rebate as u64
+    };
+    gas_coin.set_coin_value_unsafe(new_balance)
+}
+```
+
+Source: 
+
+https://github.com/MystenLabs/sui/blob/d56e02c5b170a55261921e7c163d477b0bde3f3d/crates/sui-types/src/gas_model/gas_v2.rs#L492-L503
+
+Storage rebate is subtracted when you delete some objects from the chain.
+
 ## 📅 2023-04-30
 
 Hmm, sometimes you don't rely on humans but they'll be there to help you. I'm too fortunate to have those friends around me. I would try to do the same for others. 

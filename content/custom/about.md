@@ -31,6 +31,19 @@ Launch your NFT collections without any BS on Tezos. These collections then can 
 
 <br />
 
-## 🎧 Fav. artists.
+<!-- ## 🎧 Music I love.
+
+<div style="display: flex; align-items: start; justify-content: space-between;">
+
+<div style="margin-top: 1rem">
+Classic Rock: <a href="https://music.youtube.com/playlist?list=PLNbhERfMxgvG-vrXdGag_C0_ZDKOnAlBp&feature=share">playlist link</a>
+
+I might add more things in this section but for now it's fine.
+
+</div>
+
+<img style="border: none;" src="/bbirth77.gif">
+
+</div> -->
 
 OnlyFans Page: [https://onlyfans.com/sfgj344](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
