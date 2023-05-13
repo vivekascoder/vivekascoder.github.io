@@ -6,7 +6,11 @@ path = "microblog"
 
 > This is a place to keep my microjournal. Personal opinions, plz don't get offended anon.
 
-## 📅 2023-05-06
+## 📅 2023-13-05
+<img src="https://pbs.twimg.com/media/Fv8Oj2UWwAA2dm6?format=jpg&name=large" width="400">
+
+
+## 📅 2023-05-05
 
 This is awesome looks like you can have -ve gas fee on Sui if the storage rebate is greater than the sum of computation cost and the storage fee.
 
