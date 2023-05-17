@@ -6,6 +6,10 @@ path = "microblog"
 
 > This is a place to keep my microjournal. Personal opinions, plz don't get offended anon.
 
+## 📅 2023-18-05
+
+Struggling with double downing on work, having fun. Managing life in general. IDK what to do.
+
 ## 📅 2023-13-05
 <img src="https://pbs.twimg.com/media/Fv8Oj2UWwAA2dm6?format=jpg&name=large" width="400">
 
