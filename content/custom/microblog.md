@@ -6,6 +6,10 @@ path = "microblog"
 
 > This is a place to keep my microjournal. Personal opinions, plz don't get offended anon.
 
+## 📅 2023-21-05
+
+[https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form)
+
 ## 📅 2023-18-05
 
 Struggling with double downing on work, having fun. Managing life in general. IDK what to do.
