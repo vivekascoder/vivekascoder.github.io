@@ -76,6 +76,7 @@ menus = [
     { name = "📝Lists", url = "/lists", weight = 2 },
     { name = "🕵️About", url = "/about", weight = 3 },
     { name = "🏷️Tags", url = "/tags", weight = 4 },
+    { name = "🌆Collage", url = "/collage", weight = 2 },
 ]
 
 # config social icon info in the footer
