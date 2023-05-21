@@ -75,40 +75,21 @@ img {
     <img src="/img/collage/girlinred_1.jpg" style="width:100%">
     <img src="/img/collage/girlinred_2.jpeg" style="width:100%">
     <img src="/img/collage/freddie_1.jpg" style="width:100%">
+    <img src="/img/collage/seven_nation_army.jpg" style="width:100%">
+    <img src="/img/collage/kiss_1.jpg" style="width:100%">
   </div>
   <div class="column">
     <img src="/img/collage/boywithuke.webp" style="width:100%">
     <img src="/img/collage/sxmpra_1.jpg" style="width:100%">
     <img src="/img/collage/georgehotz_1.jpeg" style="width:100%">
+    <img src="/img/collage/freddie_mercury_1.jpg" style="width:100%">
+    <img src="/img/collage/daft_punk_1.jpg" style="width:100%">
   </div>
-<div class="column">
+  <div class="column">
     <img src="/img/collage/olivertree_1.webp" style="width:100%">
     <img src="/img/collage/sxmpra_2.jpg" style="width:100%">
     <img src="/img/collage/sadboyprolific_1.jpg" style="width:100%">
+    <img src="/img/collage/acdc_1.jpg" style="width:100%">
+    <img src="/img/collage/cage_the_elephant.webp" style="width:100%">
   </div>
-  <!-- <div class="column">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-  </div>  
-  <div class="column">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-    <img src="/img/collage/girlinred_1.jpg" style="width:100%">
-  </div> -->
 </div>
