@@ -5,7 +5,7 @@ path = "nomading"
 +++
 
 
-This page contains information that I've came across through my nomading/backpacking journey. I'm still a noob when it comes to being a nomad/backpacker but I'll try to share whatever I've learned so far. Feel free to ask for any questions down below.
+This page contains information that I've came across through my nomading/backpacking journey. I'm still a noob when it comes to being a nomad/backpacker but I'll try to share whatever I've learned so far.
 
 ## Rating hostels for digital nomads in India.
 1. [The hosteller - Jaipur](https://www.booking.com/hotel/in/the-hosteller-jaipur.en-gb.html) (4/10)
@@ -15,9 +15,7 @@ This page contains information that I've came across through my nomading/backpac
 5. [Moustache - McLoed Ganj](https://www.booking.com/hotel/in/moustache-mcleodganj.en-gb.html) (0/10)
 6. [The hosteller - Bir](https://www.booking.com/hotel/in/mavro-bir.en-gb.html) (5/10)
 
-## Things to carry in your bag.
-
-TBD
+<!--
 
 ## Places I've been to
 [https://www.google.com/maps/d/u/0/edit?mid=1MRYV-6L58k94AcOHktkb2l1GeKMf4DY&usp=sharing](https://www.google.com/maps/d/u/0/edit?mid=1MRYV-6L58k94AcOHktkb2l1GeKMf4DY&usp=sharing)
@@ -25,4 +23,6 @@ TBD
 ## Follow my journey on Instagram
 
 [@normievivek](https://www.instagram.com/normievivek/)
+
+-->
 
