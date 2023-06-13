@@ -6,6 +6,13 @@ path = "microblog"
 
 > This is a place to keep my microjournal. Personal opinions, plz don't get offended anon.
 
+## 📅 2023-13-06
+
+```bash
+git log --oneline --author vivekascoder seashrine-indexer-devnet | cut -d' ' -f1 | tr '\n' ' ' | xargs -n 1 git cherry-pick
+```
+
+
 ## 📅 2023-21-05
 
 [https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form)
