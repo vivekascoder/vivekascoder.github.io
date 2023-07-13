@@ -13,6 +13,10 @@ Join my personal discord: [https://discord.gg/BdGjJdwGSV](https://discord.gg/BdG
 
 ## 🏗 Builds
 
+**[🐙 Tiny Lang](https://github.com/vivekascoder/tiny_lang)**
+
+Tiny lang is a type safe programming language, chcek out the repo for more information on it.
+
 **[⚖️ Git DAO](https://gitdao.app)**
 
 Launch DAO for your Github repositories with a few clicks on polygon.
@@ -30,20 +34,5 @@ Create NFT tickets for your event with a few clicks on Tezos. Tickets can be res
 Launch your NFT collections without any BS on Tezos. These collections then can be listed on marketplaces like [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
 
 <br />
-
-<!-- ## 🎧 Music I love.
-
-<div style="display: flex; align-items: start; justify-content: space-between;">
-
-<div style="margin-top: 1rem">
-Classic Rock: <a href="https://music.youtube.com/playlist?list=PLNbhERfMxgvG-vrXdGag_C0_ZDKOnAlBp&feature=share">playlist link</a>
-
-I might add more things in this section but for now it's fine.
-
-</div>
-
-<img style="border: none;" src="/bbirth77.gif">
-
-</div> -->
 
 OnlyFans Page: [https://onlyfans.com/sfgj344](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
