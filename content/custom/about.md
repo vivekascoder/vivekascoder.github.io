@@ -13,26 +13,21 @@ Join my personal discord: [https://discord.gg/BdGjJdwGSV](https://discord.gg/BdG
 
 ## 🏗 Builds
 
-**[🐙 Tiny Lang](https://github.com/vivekascoder/tiny_lang)**
+**[🐙 Tiny Lang](https://github.com/vivekascoder/tiny_lang)**: Tiny lang is a type safe programming language.
 
-Tiny lang is a type safe programming language, chcek out the repo for more information on it.
+**[⚖️ Git DAO](https://gitdao.app)**: Launch DAO for your Github repositories with a few clicks on polygon.
 
-**[⚖️ Git DAO](https://gitdao.app)**
+**[📈 Liquibrium](http://testnet.liquibrium.finance/)**: DEX for stable/similar assets to swap at v low slippage on tezos.
 
-Launch DAO for your Github repositories with a few clicks on polygon.
+**[🎟 Chiketto](https://chiketto.vercel.app/)**: Create NFT tickets for your event with a few clicks on Tezos. Tickets can be resell on secondary market places like [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
 
-**[📈 Liquibrium](http://testnet.liquibrium.finance/)**
+**[🖼 Make My NFT](https://makemynft.vivek.biz/)**: Launch your NFT collections on Tezos and list on [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
 
-DEX for stable/similar assets to swap at v low slippage on tezos.
+**[{} DeadJson](https://github.com/vivekascoder/dead_json)**: Simple Json parser implementation in Ts.
 
-**[🎟 Chiketto](https://chiketto.vercel.app/)**
+**[👽 Game of life](https://github.com/vivekascoder/game_of_life)**: game of life simulation in rust.
 
-Create NFT tickets for your event with a few clicks on Tezos. Tickets can be resell on secondary market places like [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
+**[🕹️ Rimoto](https://github.com/vivekascoder/rimoto)**: Bare bone implementation on control computer using websockets.
 
-**[🖼 Make My NFT](https://makemynft.vivek.biz/)**
+**[🏁 startpage](https://github.com/vivekascoder/startpage)**: Better start page.
 
-Launch your NFT collections without any BS on Tezos. These collections then can be listed on marketplaces like [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
-
-<br />
-
-OnlyFans Page: [https://onlyfans.com/sfgj344](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
