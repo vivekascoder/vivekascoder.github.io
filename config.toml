@@ -70,9 +70,8 @@ read_time = "minute read"
 all_tags = "All tags"
 menus = [
     { name = "🏠Home", url = "/", weight = 2 },
-    { name = "✍️Microblog", url = "/microblog", weight = 2 },
     { name = "📝Lists", url = "/lists", weight = 2 },
-    { name = "🕵️About", url = "/about", weight = 3 },
+    { name = "🕵️About", url = "/about", wetight = 3 },
     { name = "🏷️Tags", url = "/tags", weight = 4 },
 ]
 
