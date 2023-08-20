@@ -23,7 +23,7 @@
         <string>Supported since https://github.com/diem/diem/pull/3714</string>
         <key>patterns</key>
         <array>
-          <dict>`
+          <dict>
             <key>comment</key>
             <string>Block documentation comment</string>
             <key>name</key>
