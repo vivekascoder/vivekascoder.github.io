@@ -7,6 +7,9 @@ date = 2024-03-09
 tags = ["aptos", "DeFi", "blockchain", "move"]
 +++
 
+# Intro
+Please use `Table<K, V>` instead of `SimpleMap<K, V>`.
+
 # Code
 
 ```rust
