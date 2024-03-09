@@ -11,6 +11,9 @@ I am a blockchain developer, currently hacking 🛠 at [@SeaShrineNFT](https://t
 ## 💬 My discord
 Join my personal discord: [https://discord.gg/BdGjJdwGSV](https://discord.gg/BdGjJdwGSV)
 
+## 🧑‍💼 Hire me
+Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
+
 ## 🏗 Builds
 
 **[🐙 Tiny Lang](https://github.com/vivekascoder/tiny_lang)**: Tiny lang is a type safe programming language.
