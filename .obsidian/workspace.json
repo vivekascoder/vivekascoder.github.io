@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/custom/nomading.md",
+                "file": "content/posts/simple-channels-mpsc.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,6 +64,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "0b8e63e916668cbf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/custom/nomading.md",
+                "file": "content/posts/simple-channels-mpsc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/custom/nomading.md",
+                "file": "content/posts/simple-channels-mpsc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/custom/nomading.md"
+                "file": "content/posts/simple-channels-mpsc.md"
               }
             }
           }
@@ -148,8 +156,15 @@
   },
   "active": "95e0f03ca901b95f",
   "lastOpenFiles": [
-    "content/posts/how_aptos_accounts_are_generated.md",
+    "content/posts/setup-rustfmt.md",
+    "content/posts/simple-channels-mpsc.md",
+    "content/posts/on-chain-nfts-on-aptos.md",
     "content/posts/exploring-fuel-network.md",
+    "content/posts/learn-move-by-building-a-vault.md",
+    "content/posts/move-aptos-sui-log-1.md",
+    "content/custom/lists.md",
+    "content/custom/about.md",
+    "content/posts/how_aptos_accounts_are_generated.md",
     "content/posts/create-a-coin-on-aptos-using-move.md"
   ]
 }

@@ -30,4 +30,3 @@ Join my personal discord: [https://discord.gg/BdGjJdwGSV](https://discord.gg/BdG
 **[🕹️ Rimoto](https://github.com/vivekascoder/rimoto)**: Bare bone implementation on control computer using websockets.
 
 **[🏁 startpage](https://github.com/vivekascoder/startpage)**: Better start page.
-
