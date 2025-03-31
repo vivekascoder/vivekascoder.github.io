@@ -16,6 +16,8 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 
 ## 🏗 Builds
 
+**[📊 MadeThisToLift](https://github.com/vivekascoder/notion-workout-ui)**: Workout logging and insight solution for anyone who lifts.
+
 **[🐙 Tiny Lang](https://github.com/vivekascoder/tiny_lang)**: Tiny lang is a type safe programming language.
 
 **[⚖️ Git DAO](https://gitdao.app)**: Launch DAO for your Github repositories with a few clicks on polygon.
