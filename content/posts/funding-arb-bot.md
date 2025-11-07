@@ -23,6 +23,110 @@ Strategy that it uses
     - The integration of all exchanges in a common interface was a pain and I didn't wanna spend more time on it.
     - I was picking up one exchange then playing w it, I had the thought of having common interface but it wasn't a priority.
 
+
+## Computing the arbitrage opportunity
+
+```python
+exchanges = ["extended", "hyperliquid", "hibachi", "lighter", "pacifica"]
+
+@dataclass
+class MarketInfo:
+    name: str
+    market_name: str
+    funding_rate: float
+    next_funding_time: int
+    maxLeverage: int
+    exchange: Literal[exchanges]
+```
+
+Get data from all sources
+```python
+def combined_funding_rates():
+    markets = []
+    for exchange in exchanges:
+        markets.extend([x.__dict__ for x in FUNDING_FETCHER[exchange]()])
+
+    df = pd.DataFrame(markets)
+
+    # Set index and unstack
+    result = df.set_index(["name", "exchange"])[
+        ["funding_rate", "next_funding_time", "maxLeverage", "market_name"]
+    ].unstack("exchange")
+
+    # Flatten column names: (funding_rate, extended) -> funding_rate_extended
+    result.columns = [f"{col}_{ex}" for col, ex in result.columns]
+
+    return result.reset_index()
+
+
+def get_arbs_df():
+    df = combined_funding_rates()
+    arb_df = find_funding_arbs(df)
+    return arb_df
+
+```
+
+
+Compute the arbitrage opportunity
+```python
+def find_funding_arbs(df):
+    """
+    Find arbitrage opportunities between any two exchanges where funding rates have opposite signs.
+
+    Returns DataFrame with columns:
+    - name: asset name
+    - exchange_pair: tuple of (exchange1, exchange2)
+    - funding_rate_ex1: funding rate of exchange1
+    - funding_rate_ex2: funding rate of exchange2
+    - funding_spread: absolute difference between funding rates
+    """
+    arbs = []
+
+    # Get all funding_rate columns
+    funding_cols = [col for col in df.columns if col.startswith("funding_rate_")]
+    exchange_names = [col.replace("funding_rate_", "") for col in funding_cols]
+
+    # For each row (asset)
+    for idx, row in df.iterrows():
+        name = row["name"]
+
+        # For each pair of exchanges
+        for i, ex1 in enumerate(exchange_names):
+            for j, ex2 in enumerate(exchange_names):
+                if i >= j:  # Avoid duplicates (ex1, ex2) and (ex2, ex1)
+                    continue
+
+                col1 = f"funding_rate_{ex1}"
+                col2 = f"funding_rate_{ex2}"
+
+                rate1 = row[col1]
+                rate2 = row[col2]
+
+                # Skip if either is NaN
+                if pd.isna(rate1) or pd.isna(rate2):
+                    continue
+
+                # Check if they have opposite signs
+                if (rate1 > 0 and rate2 < 0) or (rate1 < 0 and rate2 > 0):
+                    spread = abs(rate1 - rate2)
+                    arbs.append(
+                        {
+                            "name": name,
+                            "exchanges": f"{ex1}-{ex2}",  # or use tuple: (ex1, ex2)
+                            "exchange1": ex1,
+                            "exchange2": ex2,
+                            "funding_rate_ex1": rate1,
+                            "funding_rate_ex2": rate2,
+                            "funding_spread": spread,
+                        }
+                    )
+
+    return pd.DataFrame(arbs).sort_values("funding_spread", ascending=False)
+
+```
+
+## Code
+
 ```python
 class FundingArbBot:
     config: FundingArbBotConfig
