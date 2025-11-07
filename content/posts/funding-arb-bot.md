@@ -18,6 +18,11 @@ Strategy that it uses
 - if the ROI is not enough, close the position
 - watch and wait for the next arb opportunity
 
+## Note
+- I know the code is ass, it should be using some form of adapter pattern, or plugin system to support arbitrary exchanges but.
+    - The integration of all exchanges in a common interface was a pain and I didn't wanna spend more time on it.
+    - I was picking up one exchange then playing w it, I had the thought of having common interface but it wasn't a priority.
+
 ```python
 class FundingArbBot:
     config: FundingArbBotConfig
