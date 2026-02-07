@@ -14,6 +14,8 @@ Join my personal discord: [https://discord.gg/BdGjJdwGSV](https://discord.gg/BdG
 ## 🧑‍💼 Hire me
 Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 
+📄 **[View my Resume](/resume)**
+
 ## 🏗 Builds
 
 **[📊 MadeThisToLift](https://github.com/vivekascoder/notion-workout-ui)**: Workout logging and insight solution for anyone who lifts.
@@ -35,3 +37,6 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 **[🕹️ Rimoto](https://github.com/vivekascoder/rimoto)**: Bare bone implementation on control computer using websockets.
 
 **[🏁 startpage](https://github.com/vivekascoder/startpage)**: Better start page.
+
+## 💪 Lifting
+Check out my [lifting page](/lifting) for my fitness journey and thoughts on weightlifting.
