@@ -12,6 +12,12 @@
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const ants = [];
     const dyingAnts = [];
+    const audioState = {
+        context: null,
+        masterGain: null,
+        noiseBuffer: null,
+        lastBurnAt: 0,
+    };
     const pointer = {
         x: window.innerWidth * 0.5,
         y: window.innerHeight * 0.45,
@@ -45,6 +51,101 @@
             return angle + Math.PI * 2;
         }
         return angle;
+    }
+
+    function getAudioContextConstructor() {
+        return window.AudioContext || window.webkitAudioContext || null;
+    }
+
+    function createNoiseBuffer(audioContext) {
+        const durationSeconds = 0.24;
+        const frameCount = Math.floor(audioContext.sampleRate * durationSeconds);
+        const buffer = audioContext.createBuffer(1, frameCount, audioContext.sampleRate);
+        const samples = buffer.getChannelData(0);
+
+        for (let index = 0; index < frameCount; index += 1) {
+            const progress = index / frameCount;
+            samples[index] = (Math.random() * 2 - 1) * (1 - progress);
+        }
+
+        return buffer;
+    }
+
+    function ensureAudioReady() {
+        const AudioContextCtor = getAudioContextConstructor();
+        if (!AudioContextCtor) {
+            return null;
+        }
+
+        if (!audioState.context) {
+            const audioContext = new AudioContextCtor();
+            const masterGain = audioContext.createGain();
+            masterGain.gain.value = 0.5;
+            masterGain.connect(audioContext.destination);
+
+            audioState.context = audioContext;
+            audioState.masterGain = masterGain;
+            audioState.noiseBuffer = createNoiseBuffer(audioContext);
+        }
+
+        return audioState.context;
+    }
+
+    function unlockAudio() {
+        const audioContext = ensureAudioReady();
+        if (!audioContext || audioContext.state === "running") {
+            return;
+        }
+
+        audioContext.resume().catch(() => {});
+    }
+
+    function playBurnSound() {
+        const audioContext = ensureAudioReady();
+        if (!audioContext || audioContext.state !== "running" || !audioState.masterGain || !audioState.noiseBuffer) {
+            return;
+        }
+
+        const now = audioContext.currentTime;
+        if (now - audioState.lastBurnAt < 0.045) {
+            return;
+        }
+        audioState.lastBurnAt = now;
+
+        const noiseSource = audioContext.createBufferSource();
+        noiseSource.buffer = audioState.noiseBuffer;
+
+        const noiseFilter = audioContext.createBiquadFilter();
+        noiseFilter.type = "bandpass";
+        noiseFilter.frequency.setValueAtTime(1450 + Math.random() * 350, now);
+        noiseFilter.Q.setValueAtTime(0.8, now);
+
+        const noiseGain = audioContext.createGain();
+        noiseGain.gain.setValueAtTime(0.0001, now);
+        noiseGain.gain.exponentialRampToValueAtTime(0.16, now + 0.015);
+        noiseGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.2);
+
+        const toneOscillator = audioContext.createOscillator();
+        toneOscillator.type = "triangle";
+        toneOscillator.frequency.setValueAtTime(240 + Math.random() * 45, now);
+        toneOscillator.frequency.exponentialRampToValueAtTime(95, now + 0.22);
+
+        const toneGain = audioContext.createGain();
+        toneGain.gain.setValueAtTime(0.0001, now);
+        toneGain.gain.exponentialRampToValueAtTime(0.035, now + 0.02);
+        toneGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.24);
+
+        noiseSource.connect(noiseFilter);
+        noiseFilter.connect(noiseGain);
+        noiseGain.connect(audioState.masterGain);
+
+        toneOscillator.connect(toneGain);
+        toneGain.connect(audioState.masterGain);
+
+        noiseSource.start(now);
+        noiseSource.stop(now + 0.24);
+        toneOscillator.start(now);
+        toneOscillator.stop(now + 0.24);
     }
 
     function resizeCanvas() {
@@ -86,9 +187,14 @@
         updatePointerTarget(touch.clientX, touch.clientY, performance.now());
     }
 
+    function handleTouchStart() {
+        unlockAudio();
+    }
+
     function handlePointerDown(event) {
         if (event.button === 0) {
             pointer.leftDown = true;
+            unlockAudio();
             updatePointerTarget(event.clientX, event.clientY, performance.now());
         }
     }
@@ -148,6 +254,7 @@
         }
 
         ants.splice(index, 1);
+        playBurnSound();
         const sparks = [];
         const sparkCount = reducedMotion.matches ? 7 : 16;
 
@@ -456,7 +563,9 @@
         pointer.active = false;
         pointer.leftDown = false;
     });
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
     window.addEventListener("touchmove", handleTouchMove, { passive: true });
+    window.addEventListener("keydown", unlockAudio, { passive: true });
 
     requestAnimationFrame((time) => {
         lastFrameTime = time;
