@@ -5,6 +5,9 @@
 {% include "partials/header.html" %}
 
 <body>
+    <div class="ants-stage" aria-hidden="true">
+        <canvas id="ants-canvas"></canvas>
+    </div>
     <div class="content">
         {% include "partials/head.html" %}
 
@@ -59,6 +62,7 @@
 
         {% include "partials/footer.html" %}
     </div>
+    <script src={{ get_url(path="js/ants.js") }}></script>
     <script src="/js/move.js"></script>
 </body>
 

@@ -17,6 +17,9 @@ html {
 body {
     display: block;
     margin: 8px;
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
 }
 
 * {
@@ -36,6 +39,25 @@ body {
 .content {
     animation: intro 0.3s both;
     animation-delay: 0.15s;
+    position: relative;
+    z-index: 1;
+}
+
+.ants-stage {
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    margin-bottom: -100vh;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    pointer-events: none;
+}
+
+#ants-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 ::selection {
