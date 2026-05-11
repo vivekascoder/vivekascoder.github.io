@@ -20,6 +20,10 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 
 **[📊 MadeThisToLift](https://github.com/vivekascoder/notion-workout-ui)**: Workout logging and insight solution for anyone who lifts.
 
+**[TrackMeDaddy](http://trackmedaddy.vivek.ink/)**: TrackMeDaddy.
+
+**[x-research](https://xresearch.vivek.ink/)**: x-research.
+
 **[🐙 Tiny Lang](https://github.com/vivekascoder/tiny_lang)**: Tiny lang is a type safe programming language.
 
 **[⚖️ Git DAO](https://gitdao.app)**: Launch DAO for your Github repositories with a few clicks on polygon.
@@ -28,7 +32,7 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 
 **[🎟 Chiketto](https://chiketto.vercel.app/)**: Create NFT tickets for your event with a few clicks on Tezos. Tickets can be resell on secondary market places like [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
 
-**[🖼 Make My NFT](https://makemynft.vivek.biz/)**: Launch your NFT collections on Tezos and list on [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
+**[🖼 Make My NFT](https://www.youtube.com/watch?v=AwGJwABjTR4)**: Launch your NFT collections on Tezos and list on [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
 
 **[{} DeadJson](https://github.com/vivekascoder/dead_json)**: Simple Json parser implementation in Ts.
 
