@@ -45,13 +45,7 @@
     {% endif %}
 
 
-    {% if config.extra.useCDN | default(value=false) %}
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    {% else %}
-        <link href={{ get_url(path="css/fonts.css") }} rel="stylesheet" />
-    {% endif %}
+    <link href={{ get_url(path="css/fonts.css") }} rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="css/main.css") }} />
 

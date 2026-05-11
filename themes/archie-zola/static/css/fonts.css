@@ -12,16 +12,11 @@
        url('../fonts/fira-sans-v10-latin-regular.svg#FiraSans') format('svg'); /* Legacy iOS */
 }
 /* roboto-mono-regular - latin */
-@font-face {  
-  font-family: 'Roboto Mono';
+@font-face {
+  font-family: 'Comic Sans MS';
   font-style: normal;
-  font-weight: 400;  
-  src: url('../fonts/roboto-mono-v12-latin-regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/roboto-mono-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/roboto-mono-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-mono-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/roboto-mono-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/roboto-mono-v12-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
+  font-weight: 400;
+  src: url('../fonts/comic-sans-ms.ttf') format('truetype');
 }
 /* ibm-plex-mono-500italic - latin */
 @font-face {
@@ -38,8 +33,15 @@
 }
 
 @font-face {
-  font-family: 'Dank Mono';
-  font-style: italic;
-  font-weight: 500;
-  src: url('../fonts/Dank\ Mono\ Regular.otf'); /* IE9 Compat Modes */
+  font-family: 'Comic Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/comic-mono.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Comic Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/comic-mono-bold.ttf') format('truetype');
 }

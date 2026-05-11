@@ -9,7 +9,7 @@
 
 html {
     color: #232333;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 15px;
     line-height: 1.6em;
 }
@@ -21,21 +21,6 @@ body {
 
 * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-@keyframes intro {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.content {
-    animation: intro 0.3s both;
-    animation-delay: 0.15s;
 }
 
 ::selection {
@@ -125,6 +110,7 @@ figure h4::before {
 /* Code blocks */
 code {
     background-color: #f1f1f1;
+    font-family: "Comic Mono", monospace;
     padding: 0.1em 0.2em;
 }
 
@@ -133,11 +119,11 @@ pre {
     line-height: 1.4;
     overflow-x: auto;
     padding: 1em;
-    font-family: 'Dank Mono';
+    font-family: "Comic Mono", monospace;
 }
 
 pre > * {
-    font-family: 'Dank Mono';
+    font-family: "Comic Mono", monospace;
 }
 
 .highlight pre ::selection {
@@ -321,7 +307,7 @@ svg {
 }
 
 pre {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Comic Mono", monospace;
     position: relative;
     -webkit-overflow-scrolling: touch;
 }
