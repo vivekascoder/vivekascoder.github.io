@@ -6,10 +6,7 @@ path = "about"
 
 <img src="/pepe.jpg" alt="Author" width="200">
 
-I am a blockchain developer, currently hacking 🛠 at [@SeaShrineNFT](https://twitter.com/SeaShrineNFT). I love 🏗 building things, they're mostly toy projects. I was a part of [Tezos India Fellowship 2.0](https://tif2.devfolio.co/), [Antler India Fellowship](https://www.antler.co/india-fellowship) and most recently [Polygon India Fellowship](https://polygon.technology/polygon-fellowship/). Currently actively building on [Aptos](https://aptoslabs.com/) and [Sui](https://sui.io/).
-
-## 💬 My discord
-Join my personal discord: [https://discord.gg/BdGjJdwGSV](https://discord.gg/BdGjJdwGSV)
+I am a blockchain developer, previously worked on 🛠 [@SeaShrineNFT](https://twitter.com/SeaShrineNFT). I love 🏗 building things, they're mostly toy projects. I was a part of [Tezos India Fellowship 2.0](https://tif2.devfolio.co/), [Antler India Fellowship](https://www.antler.co/india-fellowship) and most recently [Polygon India Fellowship](https://polygon.technology/polygon-fellowship/). Currently actively building on [Aptos](https://aptoslabs.com/) and [Sui](https://sui.io/).
 
 ## 🧑‍💼 Hire me
 Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
@@ -21,6 +18,8 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 **[📊 MadeThisToLift](https://github.com/vivekascoder/notion-workout-ui)**: Workout logging and insight solution for anyone who lifts.
 
 **[TrackMeDaddy](http://trackmedaddy.vivek.ink/)**: TrackMeDaddy.
+
+**[tiny-mute](https://github.com/vivekascoder/tiny-mute)**: Dockerized HFT trading setup with exchange switching and Bollinger-band strategy work.
 
 **[x-research](https://xresearch.vivek.ink/)**: x-research.
 
@@ -41,6 +40,3 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 **[🕹️ Rimoto](https://github.com/vivekascoder/rimoto)**: Bare bone implementation on control computer using websockets.
 
 **[🏁 startpage](https://github.com/vivekascoder/startpage)**: Better start page.
-
-## 💪 Lifting
-Check out my [lifting page](/lifting) for my fitness journey and thoughts on weightlifting.
