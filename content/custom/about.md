@@ -15,13 +15,11 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 
 ## 🏗 Builds
 
-**[📊 MadeThisToLift](https://github.com/vivekascoder/notion-workout-ui)**: Workout logging and insight solution for anyone who lifts.
-
-**[TrackMeDaddy](http://trackmedaddy.vivek.ink/)**: TrackMeDaddy.
+**[TrackMeDaddy](http://trackmedaddy.vivek.ink/)**: Simple workout tracking. Log sets, see progress.
 
 **[tiny-mute](https://github.com/vivekascoder/tiny-mute)**: Dockerized HFT trading setup with exchange switching and Bollinger-band strategy work.
 
-**[x-research](https://xresearch.vivek.ink/)**: x-research.
+**[x-research](https://xresearch.vivek.ink/)**: Let AI agents do deep research on twitter without paying.
 
 **[🐙 Tiny Lang](https://github.com/vivekascoder/tiny_lang)**: Tiny lang is a type safe programming language.
 
