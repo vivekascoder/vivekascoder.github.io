@@ -4,11 +4,21 @@ date = 2022-09-29
 path = "about"
 +++
 
-<img src="/pepe.jpg" alt="Author" width="200">
+<div style="display: flex; flex-direction: row; gap: 20px;">
+   <img src="/pepe.jpg" alt="Author" width="200"></center>
+    <div>
+        <p>I am a blockchain developer, previously worked on 🛠 <a href="https://twitter.com/SeaShrineNFT">@SeaShrineNFT</a>. I love 🏗 building things, they're mostly toy projects. I was a part of <a href="https://tif2.devfolio.co/">Tezos India Fellowship 2.0</a>, <a href="https://www.antler.co/india-fellowship">Antler India Fellowship</a> and most recently <a href="https://polygon.technology/polygon-fellowship/">Polygon India Fellowship</a>. Currently actively building on <a href="https://aptoslabs.com/">Aptos</a> and <a href="https://sui.io/">Sui</a>.</p>
+    </div>
+</div>
 
-I am a blockchain developer, previously worked on 🛠 [@SeaShrineNFT](https://twitter.com/SeaShrineNFT). I love 🏗 building things, they're mostly toy projects. I was a part of [Tezos India Fellowship 2.0](https://tif2.devfolio.co/), [Antler India Fellowship](https://www.antler.co/india-fellowship) and most recently [Polygon India Fellowship](https://polygon.technology/polygon-fellowship/). Currently actively building on [Aptos](https://aptoslabs.com/) and [Sui](https://sui.io/).
+<style>
+    @media (max-width: 600px) {
+        div { flex-direction: column !important; }
+    }
+</style>
 
 ## 🧑‍💼 Hire me
+
 Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 
 📄 **[View my Resume](/resume)**
@@ -22,6 +32,10 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 **[x-research](https://xresearch.vivek.ink/)**: Let AI agents do deep research on twitter without paying.
 
 **[🐙 Tiny Lang](https://github.com/vivekascoder/tiny_lang)**: Tiny lang is a type safe programming language.
+
+
+<details style="background-color: rgba(128, 128, 128, 0.1); padding: 16px; border-radius: 8px;">
+<summary><strong>🏛️ Archived projects</strong></summary>
 
 **[⚖️ Git DAO](https://gitdao.app)**: Launch DAO for your Github repositories with a few clicks on polygon.
 
@@ -38,3 +52,6 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 **[🕹️ Rimoto](https://github.com/vivekascoder/rimoto)**: Bare bone implementation on control computer using websockets.
 
 **[🏁 startpage](https://github.com/vivekascoder/startpage)**: Better start page.
+
+</details>
+
