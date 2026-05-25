@@ -25,6 +25,8 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 
 ## 🏗 Builds
 
+**[CmdTab](https://cmd-tab.vercel.app/)**: Use the unused Command key for the thing you do all day: switching apps.
+
 **[TrackMeDaddy](http://trackmedaddy.vivek.ink/)**: Simple workout tracking. Log sets, see progress.
 
 **[tiny-mute](https://github.com/vivekascoder/tiny-mute)**: Dockerized HFT trading setup with exchange switching and Bollinger-band strategy work.
@@ -54,4 +56,3 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 **[🏁 startpage](https://github.com/vivekascoder/startpage)**: Better start page.
 
 </details>
-
