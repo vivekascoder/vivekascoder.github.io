@@ -1,40 +1,68 @@
+:root {
+    --background-primary: #0f0f0f;
+    --background-primary-alt: #171717;
+    --background-secondary: #242424;
+    --background-secondary-alt: #000000;
+    --background-modifier-border: #303030;
+    --text-accent: #a994ff;
+    --text-accent-hover: #c4b7ff;
+    --text-normal: #d6d6d6;
+    --text-muted: #ababab;
+    --text-faint: #737373;
+    --text-selection: rgba(23, 48, 77, 0.99);
+    --text-on-accent: #f2f2f2;
+    --interactive-normal: #2b2b2b;
+    --interactive-hover: #353535;
+    --interactive-accent: #6b56c7;
+    --interactive-accent-hover: #7b67df;
+    --interactive-success: #197300;
+    --maincolor: var(--text-accent);
+    --bordercl: var(--background-modifier-border);
+    --callouctcolor: var(--interactive-accent);
+    --hovercolor: var(--text-accent-hover);
+    --darkMaincolor: var(--text-accent);
+}
+
+html,
 body {
-    color: white;
-    background-color: #202124;
+    background-color: var(--background-primary);
+    color: var(--text-normal);
 }
 
 ::-moz-selection {
-    background: blue;
-    color: #fff;
+    background: var(--text-selection);
+    color: var(--text-normal);
     text-shadow: none;
 }
 
 ::selection {
-    background: #bd93f933;
-    color: #fff;
+    background: var(--text-selection);
+    color: var(--text-normal);
     text-shadow: none;
 }
 
 hr {
-    border-top: 3px dotted blue;
-}
-
-code {
-    background-color: lightblue;
-    color: black;
-    text-decoration: bold;
-    padding: 0.1em 0.2em;
-}
-
-pre {
-    background-color: #272822;
-    line-height: 1.4;
-    overflow-x: auto;
-    padding: 1em;
+    border-top-color: var(--background-modifier-border);
 }
 
 blockquote {
-    border-color: blue;
+    background-color: var(--background-primary-alt);
+    border-color: var(--text-accent);
+    color: var(--text-muted);
+}
+
+code {
+    background-color: var(--interactive-normal);
+    color: var(--text-normal);
+}
+
+pre {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.highlight {
+    background-color: var(--background-secondary);
 }
 
 h1,
@@ -43,153 +71,190 @@ h3,
 h4,
 h5,
 h6 {
-    color: #ddd;
+    color: var(--text-normal);
 }
 
-h1::before {
-    color: var(--darkMaincolor);
-    content: "# ";
-}
-
-h2::before {
-    color: var(--darkMaincolor);
-    content: "## ";
-}
-
-h3::before {
-    color: var(--darkMaincolor);
-    content: "### ";
-}
-
-h4::before {
-    color: var(--darkMaincolor);
-    content: "#### ";
-}
-
-h5::before {
-    color: var(--darkMaincolor);
-    content: "##### ";
-}
-
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
 h6::before {
-    color: var(--darkMaincolor);
-    content: "###### ";
+    color: var(--text-accent);
 }
 
 a {
-    border-bottom: 3px solid var(--darkMaincolor);
-    color: inherit;
+    border-bottom-color: var(--text-accent);
+    color: var(--text-accent);
 }
 
 a:hover {
-    background-color: var(--darkMaincolor);
-    color: black;
+    background-color: var(--interactive-hover);
+    color: var(--text-accent-hover);
 }
 
-.site-description a {
-    color: #ddd;
+.site-description a,
+.site-title a,
+header .main a {
+    color: var(--text-normal);
 }
 
-.site-description a:hover {
-    color: black;
+.site-description a:hover,
+.site-title a:hover,
+header .main a:hover {
+    color: var(--text-accent-hover);
 }
+
+p,
 ol li {
-
-    color:rgba(255, 255, 255, 0.6);
+    color: var(--text-normal);
 }
 
 div.description {
-    color:rgba(255, 255, 255, 0.6);
+    color: var(--text-muted);
+}
+
+.meta,
+time {
+    color: var(--text-faint);
+}
+
+header,
+.header nav,
+.footer,
+footer {
+    border-color: var(--background-modifier-border);
+}
+
+.list-item .title a,
+.posts .post a {
+    color: var(--text-normal);
+}
+
+.list-item .title a:hover,
+.posts .post a:hover {
+    color: var(--text-accent-hover);
 }
 
 .tags a {
-    border-bottom: 3px solid var(--darkMaincolor);
+    border-bottom-color: var(--text-accent);
 }
 
 .tags a:hover {
-    background-color: var(--darkMaincolor);
-    color: black;
+    background-color: var(--interactive-hover);
+    color: var(--text-accent-hover);
 }
 
-.site-title a {
-    color: white;
-    text-decoration: none !important;
+.callout {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
 }
 
-p {
-    line-height: 1.5;
-    color:rgba(255, 255, 255, 0.6);
+.callout a {
+    border-bottom-color: var(--text-on-accent);
+    color: var(--text-on-accent);
 }
 
-
-.header nav,
-.footer {
-    border-color: #333;
-}
-
-.highlight {
-    background-color: #333;
+.callout a:hover {
+    background-color: var(--interactive-accent-hover);
+    color: var(--text-on-accent);
 }
 
 .soc:hover {
-    color: black;
+    color: var(--text-accent-hover);
 }
 
 .draft-label {
-    color: var(--darkMaincolor);
-    background-color: blue;
+    background-color: var(--interactive-normal);
+    color: var(--text-accent);
 }
 
-.highlight pre code[class=language-javaScript]::before,
+img,
+table th,
+table td {
+    border-color: var(--background-modifier-border);
+}
+
+table th {
+    background-color: var(--background-primary-alt);
+}
+
+pre code[class*="language-"]::before {
+    background: var(--interactive-normal);
+    color: var(--text-muted);
+}
+
+pre code[class="language-javaScript"]::before,
+pre code[class="language-js"]::before,
+.highlight pre code[class="language-javaScript"]::before,
 .highlight pre code[class="language-js"]::before {
     content: "js";
-    background: #f7df1e;
-    color: black;
+    background: #333;
+    color: var(--text-normal);
 }
 
-.highlight pre code[class*='language-yml']::before,
-.highlight pre code[class*='language-yaml']::before {
-    content: 'yaml';
-    background: #f71e6a;
-    color: white;
+.highlight pre code[class*="language-yml"]::before,
+pre code[class*="language-yml"]::before,
+pre code[class*="language-yaml"]::before,
+.highlight pre code[class*="language-yaml"]::before {
+    content: "yaml";
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
 }
 
-.highlight pre code[class*='language-shell']::before,
-.highlight pre code[class*='language-bash']::before,
-.highlight pre code[class*='language-sh']::before {
-    content: 'shell';
-    background: green;
-    color: white
+pre code[class*="language-shell"]::before,
+pre code[class*="language-bash"]::before,
+pre code[class*="language-sh"]::before,
+.highlight pre code[class*="language-shell"]::before,
+.highlight pre code[class*="language-bash"]::before,
+.highlight pre code[class*="language-sh"]::before {
+    content: "shell";
+    background: var(--interactive-success);
+    color: var(--text-on-accent);
 }
 
-.highlight pre code[class*='language-json']::before {
-    content: 'json';
-    background: dodgerblue;
-    color: #000000
+pre code[class*="language-json"]::before,
+.highlight pre code[class*="language-json"]::before {
+    content: "json";
+    background: var(--text-accent);
+    color: var(--background-primary);
 }
 
-.highlight pre code[class*='language-python']::before,
-.highlight pre code[class*='language-py']::before {
-    content: 'py';
-    background: blue;
-    color: yellow;
+pre code[class*="language-python"]::before,
+pre code[class*="language-py"]::before,
+.highlight pre code[class*="language-python"]::before,
+.highlight pre code[class*="language-py"]::before {
+    content: "py";
+    background: var(--background-modifier-border);
+    color: var(--text-accent-hover);
 }
 
-.highlight pre code[class*='language-css']::before {
-    content: 'css';
-    background: cyan;
-    color: black;
+pre code[class*="language-css"]::before,
+.highlight pre code[class*="language-css"]::before {
+    content: "css";
+    background: var(--background-modifier-border);
+    color: var(--text-normal);
 }
 
-.highlight pre code[class*='language-go']::before {
-    content: 'Go';
-    background: cyan;
-    color: royalblue;
+pre code[class*="language-go"]::before,
+.highlight pre code[class*="language-go"]::before {
+    content: "Go";
+    background: var(--background-modifier-border);
+    color: var(--text-accent-hover);
 }
 
-.highlight pre code[class*='language-md']::before,
-.highlight pre code[class*='language-md']::before {
-    content: 'Markdown';
-    background: royalblue;
-    color: whitesmoke;
+pre code[class*="language-md"]::before,
+.highlight pre code[class*="language-md"]::before {
+    content: "Markdown";
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+pre code[class*="language-rust"]::before,
+pre code[class*="language-rs"]::before,
+.highlight pre code[class*="language-rust"]::before,
+.highlight pre code[class*="language-rs"]::before {
+    content: "rust";
+    background: var(--background-modifier-border);
+    color: var(--text-accent-hover);
 }

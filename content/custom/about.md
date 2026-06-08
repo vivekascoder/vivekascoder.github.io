@@ -19,40 +19,54 @@ path = "about"
 
 ## 🧑‍💼 Hire me
 
-Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
-
-📄 **[View my Resume](/resume)**
+> Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
+> 
+> 📄 **[View my Resume](/resume)**
 
 ## 🏗 Builds
 
-**[🐙 Tiny Lang](https://tiny-lang.vivek.ink/)**: Tiny lang is a type safe programming language.
-
-**[CmdTab](https://cmd-tab.vercel.app/)**: Use the unused Command key for the thing you do all day: switching apps.
-
-**[TrackMeDaddy](http://trackmedaddy.vivek.ink/)**: Simple workout tracking. Log sets, see progress.
-
-**[tiny-mute](https://github.com/vivekascoder/tiny-mute)**: Dockerized HFT trading setup with exchange switching and Bollinger-band strategy work.
-
-**[x-research](https://xresearch.vivek.ink/)**: Let AI agents do deep research on twitter without paying.
-
-**[📈 Liquibrium](https://www.youtube.com/watch?v=zzab0qFDhwo)**: DEX for stable/similar assets to swap at v low slippage on tezos.
-
+<div class="project-grid">
+  <a class="project-card" href="https://tiny-lang.vivek.ink/" target="_blank" rel="noopener noreferrer">
+    <strong>🐙 Tiny Lang</strong>
+    <span>Tiny lang is a type safe programming language.</span>
+  </a>
+  <a class="project-card" href="https://cmd-tab.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <strong>CmdTab</strong>
+    <span>Use the unused Command key for the thing you do all day: switching apps.</span>
+  </a>
+  <a class="project-card" href="http://trackmedaddy.vivek.ink/" target="_blank" rel="noopener noreferrer">
+    <strong>TrackMeDaddy</strong>
+    <span>Simple workout tracking. Log sets, see progress.</span>
+  </a>
+  <a class="project-card" href="https://github.com/vivekascoder/tiny-mute" target="_blank" rel="noopener noreferrer">
+    <strong>tiny-mute</strong>
+    <span>Dockerized HFT trading setup with exchange switching and Bollinger-band strategy work.</span>
+  </a>
+  <a class="project-card" href="https://xresearch.vivek.ink/" target="_blank" rel="noopener noreferrer">
+    <strong>x-research</strong>
+    <span>Let AI agents do deep research on twitter without paying.</span>
+  </a>
+  <a class="project-card" href="https://www.youtube.com/watch?v=zzab0qFDhwo" target="_blank" rel="noopener noreferrer">
+    <strong>📈 Liquibrium</strong>
+    <span>DEX for stable/similar assets to swap at v low slippage on tezos.</span>
+  </a>
+</div>
 
 <details style="background-color: rgba(128, 128, 128, 0.1); padding: 16px; border-radius: 8px;">
 <summary><strong>🏛️ Archived projects</strong></summary>
 
-**[⚖️ Git DAO](https://gitdao.app)**: Launch DAO for your Github repositories with a few clicks on polygon.
+**<a href="https://gitdao.app" target="_blank" rel="noopener noreferrer">⚖️ Git DAO</a>**: Launch DAO for your Github repositories with a few clicks on polygon.
 
-**[🎟 Chiketto](https://chiketto.vercel.app/)**: Create NFT tickets for your event with a few clicks on Tezos. Tickets can be resell on secondary market places like [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
+**<a href="https://chiketto.vercel.app/" target="_blank" rel="noopener noreferrer">🎟 Chiketto</a>**: Create NFT tickets for your event with a few clicks on Tezos. Tickets can be resell on secondary market places like <a href="https://objkt.com/" target="_blank" rel="noopener noreferrer">Objkt</a> and <a href="https://rarible.com/" target="_blank" rel="noopener noreferrer">Rarible</a>.
 
-**[🖼 Make My NFT](https://www.youtube.com/watch?v=AwGJwABjTR4)**: Launch your NFT collections on Tezos and list on [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
+**<a href="https://www.youtube.com/watch?v=AwGJwABjTR4" target="_blank" rel="noopener noreferrer">🖼 Make My NFT</a>**: Launch your NFT collections on Tezos and list on <a href="https://objkt.com/" target="_blank" rel="noopener noreferrer">Objkt</a> and <a href="https://rarible.com/" target="_blank" rel="noopener noreferrer">Rarible</a>.
 
-**[{} DeadJson](https://github.com/vivekascoder/dead_json)**: Simple Json parser implementation in Ts.
+**<a href="https://github.com/vivekascoder/dead_json" target="_blank" rel="noopener noreferrer">{} DeadJson</a>**: Simple Json parser implementation in Ts.
 
-**[👽 Game of life](https://github.com/vivekascoder/game_of_life)**: game of life simulation in rust.
+**<a href="https://github.com/vivekascoder/game_of_life" target="_blank" rel="noopener noreferrer">👽 Game of life</a>**: game of life simulation in rust.
 
-**[🕹️ Rimoto](https://github.com/vivekascoder/rimoto)**: Bare bone implementation on control computer using websockets.
+**<a href="https://github.com/vivekascoder/rimoto" target="_blank" rel="noopener noreferrer">🕹️ Rimoto</a>**: Bare bone implementation on control computer using websockets.
 
-**[🏁 startpage](https://github.com/vivekascoder/startpage)**: Better start page.
+**<a href="https://github.com/vivekascoder/startpage" target="_blank" rel="noopener noreferrer">🏁 startpage</a>**: Better start page.
 
 </details>
