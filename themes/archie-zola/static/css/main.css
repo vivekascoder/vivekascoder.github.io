@@ -166,12 +166,25 @@ pre code {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    padding: 1.25rem 1ch 0;
+    padding: 0 1ch;
     word-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        padding-left: 2ch;
+        padding-right: 2ch;
+    }
+
+    .list > ul {
+        margin-left: -2ch;
+        margin-right: -2ch;
+    }
 }
 
 /* Header */
 header {
+    align-items: center;
     background-color: var(--background-primary);
     border-bottom: 1px solid var(--background-modifier-border);
     display: flex;
@@ -193,6 +206,8 @@ header nav {
 }
 
 header .main {
+    align-items: center;
+    display: flex;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -204,6 +219,10 @@ header nav a {
 
 header nav a {
     padding: 0.25rem 0.5rem;
+}
+
+header .main a {
+    padding: 0.25rem 0;
 }
 
 .list-item .title a,
@@ -287,7 +306,7 @@ footer {
 }
 
 #main_title {
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 /* Common */
