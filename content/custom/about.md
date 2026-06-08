@@ -35,13 +35,13 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 
 **[x-research](https://xresearch.vivek.ink/)**: Let AI agents do deep research on twitter without paying.
 
+**[📈 Liquibrium](https://www.youtube.com/watch?v=zzab0qFDhwo)**: DEX for stable/similar assets to swap at v low slippage on tezos.
+
 
 <details style="background-color: rgba(128, 128, 128, 0.1); padding: 16px; border-radius: 8px;">
 <summary><strong>🏛️ Archived projects</strong></summary>
 
 **[⚖️ Git DAO](https://gitdao.app)**: Launch DAO for your Github repositories with a few clicks on polygon.
-
-**[📈 Liquibrium](http://testnet.liquibrium.finance/)**: DEX for stable/similar assets to swap at v low slippage on tezos.
 
 **[🎟 Chiketto](https://chiketto.vercel.app/)**: Create NFT tickets for your event with a few clicks on Tezos. Tickets can be resell on secondary market places like [Objkt](https://objkt.com/) and [Rarible](https://rarible.com/).
 
