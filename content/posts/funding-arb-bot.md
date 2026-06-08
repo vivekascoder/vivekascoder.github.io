@@ -18,6 +18,12 @@ Strategy that it uses
 - if the ROI is not enough, close the position
 - watch and wait for the next arb opportunity
 
+## Architecture
+
+<div style="display: flex; justify-content: center; margin: 1.5rem 0;">
+  <img class="no-border" src="/img/funding-arb-bot-strategy.png" alt="Funding arbitrage bot architecture" />
+</div>
+
 ## Note
 - I know the code is ass, it should be using some form of adapter pattern, or plugin system to support arbitrary exchanges but.
     - The integration of all exchanges in a common interface was a pain and I didn't wanna spend more time on it.
