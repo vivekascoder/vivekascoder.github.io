@@ -21,7 +21,7 @@ Strategy that it uses
 ## Architecture
 
 <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-  <img class="no-border" src="/img/funding-arb-bot-strategy.png" alt="Funding arbitrage bot architecture" />
+  <img class="no-border" src="/img/funding-arb-bot-strategy.png" alt="Funding arbitrage bot architecture" style="max-height: 560px; width: auto;" />
 </div>
 
 ## Note
