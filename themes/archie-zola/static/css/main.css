@@ -9,7 +9,7 @@
 
 html {
     color: #232333;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Iosevka Charon", monospace;
     font-size: 15px;
     line-height: 1.6em;
 }
@@ -110,7 +110,7 @@ figure h4::before {
 /* Code blocks */
 code {
     background-color: #f1f1f1;
-    font-family: "Comic Mono", monospace;
+    font-family: "Iosevka Charon", monospace;
     padding: 0.1em 0.2em;
 }
 
@@ -119,11 +119,11 @@ pre {
     line-height: 1.4;
     overflow-x: auto;
     padding: 1em;
-    font-family: "Comic Mono", monospace;
+    font-family: "Iosevka Charon", monospace;
 }
 
 pre > * {
-    font-family: "Comic Mono", monospace;
+    font-family: "Iosevka Charon", monospace;
 }
 
 .highlight pre ::selection {
@@ -258,7 +258,6 @@ article .title {
 }
 
 .callout p {
-    /* font-family: 'IBM Plex Mono', monospace; */
     margin: 0;
 }
 
@@ -329,7 +328,7 @@ svg {
 }
 
 pre {
-    font-family: "Comic Mono", monospace;
+    font-family: "Iosevka Charon", monospace;
     position: relative;
     -webkit-overflow-scrolling: touch;
 }

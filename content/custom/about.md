@@ -25,6 +25,8 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 
 ## 🏗 Builds
 
+**[🐙 Tiny Lang](https://tiny-lang.vivek.ink/)**: Tiny lang is a type safe programming language.
+
 **[CmdTab](https://cmd-tab.vercel.app/)**: Use the unused Command key for the thing you do all day: switching apps.
 
 **[TrackMeDaddy](http://trackmedaddy.vivek.ink/)**: Simple workout tracking. Log sets, see progress.
@@ -32,8 +34,6 @@ Email: [vivekascoder@gmail.com](mailto:vivekascoder@gmail.com)
 **[tiny-mute](https://github.com/vivekascoder/tiny-mute)**: Dockerized HFT trading setup with exchange switching and Bollinger-band strategy work.
 
 **[x-research](https://xresearch.vivek.ink/)**: Let AI agents do deep research on twitter without paying.
-
-**[🐙 Tiny Lang](https://github.com/vivekascoder/tiny_lang)**: Tiny lang is a type safe programming language.
 
 
 <details style="background-color: rgba(128, 128, 128, 0.1); padding: 16px; border-radius: 8px;">
