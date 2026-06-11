@@ -1,5 +1,5 @@
 <footer>
-  <div style="display:flex">
+  <div class="footer-social">
     {% for social in config.extra.social %}
     <a class="soc" href={{ social.url }} title={{ social.name }}>
       <i data-feather={{ social.icon }}></i>
@@ -7,7 +7,7 @@
     {% endfor %}
   </div>
   <div class="footer-info">
-    {{ now() | date(format="%Y") }} © {{ config.extra.copyright }} | <a href="https://vivek.ink">vivek.ink</a>
+    <a href="https://vivek.ink">vivek.ink</a>
   </div>
 </footer>
 

@@ -287,9 +287,16 @@ h6::before {
 footer {
     display: flex;
     align-items: center;
+    gap: 1.5rem;
     border-top: 1px solid var(--background-modifier-border);
     padding: 2rem 0rem;
     margin-top: 2rem;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .soc {
@@ -302,7 +309,22 @@ footer {
 }
 
 .footer-info {
+    margin-left: auto;
     padding: var(--footer-padding);
+    text-align: right;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        gap: 0.75rem;
+    }
+
+    .footer-info {
+        margin-left: auto;
+        text-align: right;
+        white-space: nowrap;
+    }
 }
 
 #main_title {
