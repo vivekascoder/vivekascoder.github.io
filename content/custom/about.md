@@ -30,6 +30,10 @@ path = "about"
     <strong>🐙 Tiny Lang</strong>
     <span>Tiny lang is a type safe programming language.</span>
   </a>
+  <a class="project-card" href="https://tiny-eval.vercel.app" target="_blank" rel="noopener noreferrer">
+    <strong>Tiny Eval</strong>
+    <span>Compact coding-agent benchmarks from historical GitHub PRs.</span>
+  </a>
   <a class="project-card" href="https://cmd-tab.vercel.app/" target="_blank" rel="noopener noreferrer">
     <strong>CmdTab</strong>
     <span>Use the unused Command key for the thing you do all day: switching apps.</span>
