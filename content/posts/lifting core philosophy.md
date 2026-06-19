@@ -26,3 +26,9 @@ tags = ["lifting"]
 <center>
 <img src="/img/stats.png" alt="from early 2026" width="400" style="border: none;">
 </center>
+
+- Some of my favorite people who I like and follow (certain things from certain people) includes.
+    - [GVS](https://www.youtube.com/@GVS) 
+    - [TNF](https://www.youtube.com/@RealTNF) 
+    - [Bald Omni man](https://www.youtube.com/@BaldOmniMan)
+- I was very obsessed with lifting during my first 2 years, must have watched 1000s of hours of lifting videos and content. Always up for conversation about your niche fitness influencer and lifting philosophy. If my tricep tendonitis heals, I'd love to compete in a street lifting competition in future, by no means my numbers are great for dips, pullups, muscle ups, squats but I find Weighted Calithenics to be really fun.
