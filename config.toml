@@ -23,7 +23,7 @@ taxonomies = [
 [markdown.highlighting]
 enabled = true
 # Theme can be customised by setting `theme` to a theme supported by Zola.
-theme = "tokyo-night"
+theme = "github-dark-default"
 extra_syntaxes_and_themes = ["syntaxes", "syntaxes/move.sublime-syntax"]
 
 
@@ -71,9 +71,9 @@ posted_by = "Published by"
 read_time = "minute read"
 all_tags = "All tags"
 menus = [
-    { name = "🏠Home", url = "/", weight = 2 },
-    { name = "🕵️About", url = "/about", wetight = 3 },
-    { name = "🏷️Tags", url = "/tags", weight = 4 },
+    { name = "🏠 Home", url = "/", weight = 2 },
+    { name = "🕵️ About", url = "/about", wetight = 3 },
+    { name = "🏷️ Tags", url = "/tags", weight = 4 },
 ]
 
 # config social icon info in the footer

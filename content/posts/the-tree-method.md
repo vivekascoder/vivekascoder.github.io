@@ -4,7 +4,7 @@ description = "Discussing the tree method of organizing your second."
 date = 2025-11-07
 
 [taxonomies]
-tags = ["second brain", "organizing", "notes"]
+tags = ["second brain", "obsidian", "note taking"]
 +++
 
 ## Introduction
@@ -38,6 +38,5 @@ Index
 ```
 
 Core idea is to put everything in Inbox (archive when get's too big), after some time, organize data from Inbox i.e create new pages if needed. And then add the appropriate links to the index that categorises the notes in projects, ideas, areas, knowledge.
-
 
 Inbox is the place where we take notes, and dump ideas, on regulat intervals we archive it improve the index, and clean up inbox. I've also been experimenting with permanent notes where I refactor similar notes of a abstracted topic into a single file that acts as a single source of truth for that topic.

@@ -1,1 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@font-face {
+    font-family: "Comic Mono";
+    src: url("/fonts/ComicMono.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Comic Mono";
+    src: url("/fonts/ComicMono-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}

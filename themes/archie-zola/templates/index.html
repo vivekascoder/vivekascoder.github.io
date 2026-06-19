@@ -5,14 +5,14 @@
 {% include "partials/header.html" %}
 
 <body>
+    {% include "partials/head.html" %}
     <div class="content">
-        {% include "partials/head.html" %}
 
         {% block main_content %}
         <main class="list">
             <div class="flex-box" style="display: flex; justify-content: center; align-items:center;">
                 <div class="gif-box" style="max-width: 5rem;">
-                    <img class="no-border" src="https://gifypet.neocities.org/images/kitty.gif" alt="Gif">
+                    <img class="no-border" src={{ get_url(path="img/kitty.gif") }} alt="Gif">
                     <!-- <img class="no-border" src="https://fauux.neocities.org/JJJjjjjdDDD.gif" alt="Gif"> -->
                 </div>
                 <div class="site-description" style="flex-grow: 1;">
@@ -60,6 +60,7 @@
         {% include "partials/footer.html" %}
     </div>
     <script src="/js/move.js"></script>
+    <script src={{ get_url(path="js/main.js") }}></script>
 </body>
 
 </html>

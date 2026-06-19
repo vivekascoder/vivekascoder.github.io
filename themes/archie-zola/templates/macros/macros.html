@@ -9,7 +9,7 @@
     {% for page in pages %}
     <li class="post">
         <a href="{{ page.permalink }}">{{ page.title }}</a>
-        <span class="meta">{{ page.date | date(format="%Y-%m-%d") }}</span>
+        <span class="meta">{{ page.date | date(format="%-d %B %Y") }}</span>
     </li>
     {% endfor %}
 </ul>
@@ -27,7 +27,7 @@
             <a href={{ page.permalink }}>{{page.title}}</a>
         </h1>
 
-        <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
+        <time>{{ page.date | date(format="%-d %B %Y") }}</time>
         <span>| {{ page.reading_time }} {{ config.extra.translations[lang][0].read_time }}</span>
         {% if page.extra.author %}
         <span>| {{extra.translations[lang][0].posted_by }} <a href="{{ page.extra.author.social }}" target="_blank">{{
@@ -83,7 +83,18 @@
                 {{extra.translations[lang][0].posted_by }} <a href="{{ page.extra.author.social }}" target="_blank">{{
                     page.extra.author.name }}</a>
                 {% endif %}
-                {{ extra.translations[lang][0].posted_on }} {{ page.date | date(format="%Y-%m-%d") }}
+                <div class="meta-pills">
+                    {% if page.taxonomies and page.taxonomies.tags %}
+                    <div class="meta-tags-row">
+                        {% for tag in page.taxonomies.tags %}
+                        <span class="meta-pill meta-tag-pill">
+                            <a class="meta-tag" href="{{ get_taxonomy_url(kind='tags', name=tag) | safe }}">{{ tag }}</a>
+                        </span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    <span class="meta-date">on {{ page.date | date(format="%-d %B %Y") }}</span>
+                </div>
 
                 {% if page.draft %}
                 <span class="draft-label">DRAFT</span>
@@ -101,18 +112,6 @@
         <section class="body">
             {{ page.content | safe }}
         </section>
-
-        {% if page.taxonomies and page.taxonomies.tags %}
-        <div class="post-tags">
-            <nav class="nav tags">
-                <ul class="tags">
-                    {% for tag in page.taxonomies.tags %}
-                    <li><a href={{ get_taxonomy_url(kind='tags' , name=tag) | safe }}>{{ tag }}</a></li>
-                    {% endfor %}
-                </ul>
-            </nav>
-        </div>
-        {% endif %}
 
     </article>
 

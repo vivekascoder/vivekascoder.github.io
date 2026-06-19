@@ -26,6 +26,8 @@
 html,
 body {
     background-color: var(--background-primary);
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23808080' fill-opacity='0.3' fill-rule='evenodd'%3E%3Ccircle cx='0' cy='0' r='1.5'/%3E%3Ccircle cx='24' cy='0' r='1.5'/%3E%3Ccircle cx='0' cy='24' r='1.5'/%3E%3Ccircle cx='24' cy='24' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
     color: var(--text-normal);
 }
 
@@ -123,6 +125,21 @@ header,
 .header nav,
 .footer,
 footer {
+    border-color: var(--background-modifier-border);
+}
+
+header {
+    background-color: transparent;
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    border-color: transparent;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(32, 32, 32, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-color: var(--background-modifier-border);
 }
 

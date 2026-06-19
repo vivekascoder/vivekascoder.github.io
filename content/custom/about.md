@@ -57,7 +57,7 @@ path = "about"
 </div>
 
 <details style="background-color: rgba(128, 128, 128, 0.1); padding: 16px; border-radius: 8px;">
-<summary><strong>🏛️ Archived projects</strong></summary>
+<summary><strong style="font-family: 'Instrument Serif', serif; font-size: 1.15rem;">🏛️ Archived projects</strong></summary>
 
 **<a href="https://gitdao.app" target="_blank" rel="noopener noreferrer">⚖️ Git DAO</a>**: Launch DAO for your Github repositories with a few clicks on polygon.
 
