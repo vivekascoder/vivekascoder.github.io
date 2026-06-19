@@ -34,7 +34,7 @@ tags = ["lifting"]
 - I was very obsessed with lifting during my first 2 years, must have watched 1000s of hours of lifting videos and content. Always up for conversation about your niche fitness influencer and lifting philosophy. If my tricep tendonitis heals, I'd love to compete in a street lifting competition in future, by no means my numbers are great for dips, pullups, muscle ups, squats but I find Weighted Calithenics to be really fun.
 
 <center>
-<iframe width="560" height="315" style="border-radius: 10px;" src="https://www.youtube-nocookie.com/embed/AclBqjo7n2k?si=CQj5ga-TEkIrLDj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe  height="315" style="border-radius: 10px; width: 80%;" src="https://www.youtube-nocookie.com/embed/AclBqjo7n2k?si=CQj5ga-TEkIrLDj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 *Here is me doing muscle ups (oct 2025)*
 </center>
