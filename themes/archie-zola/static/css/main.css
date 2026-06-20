@@ -150,7 +150,9 @@ figure h4::before {
 code {
     background-color: var(--background-primary-alt);
     color: var(--text-normal);
-    font-family: "Comic Mono", monospace;
+    font-family: "SF Mono", "Comic Mono", ui-monospace, monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     padding: 0.1em 0.2em;
 }
 
@@ -158,15 +160,17 @@ pre {
     background-color: var(--background-secondary);
     border: 1px solid var(--background-modifier-border);
     border-radius: 6px;
+    font-family: "SF Mono", "Comic Mono", ui-monospace, monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 14px;
     line-height: 1.4;
     overflow-x: auto;
     padding: 1em;
-    font-family: "Comic Mono", monospace;
 }
 
 pre > * {
-    font-family: "Comic Mono", monospace;
+    font-family: "SF Mono", "Comic Mono", ui-monospace, monospace;
 }
 
 .highlight pre ::selection {
@@ -616,7 +620,7 @@ svg {
 }
 
 pre {
-    font-family: "Comic Mono", monospace;
+    font-family: "SF Mono", "Comic Mono", ui-monospace, monospace;
     position: relative;
     -webkit-overflow-scrolling: touch;
 }
