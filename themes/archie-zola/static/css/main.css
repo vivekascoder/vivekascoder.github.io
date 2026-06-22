@@ -271,7 +271,7 @@ header {
     padding: 0.75rem 0;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 .header-inner {
@@ -774,25 +774,30 @@ pre code[class*="language-rs"]::before {
 
 .archive-post {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 0.75rem;
-    text-indent: -2ch;
+    text-indent: 0;
 }
 
 .archive-post::before {
-    content: "\00B7  ";
+    content: "\00B7";
     font-weight: bold;
+    flex-shrink: 0;
 }
 
 .archive-post > a:first-child {
     font-size: 0.95rem;
-    margin-right: 1rem;
+    margin-right: 0.15rem;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 .archive-date {
     color: var(--text-faint);
     font-size: 0.85rem;
+    flex-shrink: 0;
     white-space: nowrap;
 }
 
