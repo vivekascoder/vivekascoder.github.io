@@ -1,6 +1,52 @@
 /* Markdown */
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 
+/* Scrollbars */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(128, 128, 128, 0.15) transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.15);
+    border-radius: 2px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+pre {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(128, 128, 128, 0.1) transparent;
+}
+
+pre::-webkit-scrollbar {
+    height: 3px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 2px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
 :root {
     --background-primary: #ffffff;
     --background-primary-alt: #f5f6f8;
@@ -702,6 +748,52 @@ pre code[class*="language-rs"]::before {
     content: "rust";
     background: #f5f6f8;
     color: #800000;
+}
+
+/* Archive */
+.archive {
+    margin-top: 1rem;
+}
+
+.archive-year {
+    color: var(--text-accent);
+    font-family: "Instrument Serif", serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.archive-year::before {
+    color: var(--text-accent);
+    content: "## ";
+}
+
+.archive-year:first-child {
+    margin-top: 0;
+}
+
+.archive-post {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-indent: -2ch;
+}
+
+.archive-post::before {
+    content: "\00B7  ";
+    font-weight: bold;
+}
+
+.archive-post > a:first-child {
+    font-size: 0.95rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+}
+
+.archive-date {
+    color: var(--text-faint);
+    font-size: 0.85rem;
+    white-space: nowrap;
 }
 
 /* table */
