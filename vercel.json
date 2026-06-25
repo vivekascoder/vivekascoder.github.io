@@ -1,4 +1,15 @@
 {
   "buildCommand": "./scripts/vercel-build.sh",
-  "outputDirectory": "public"
+  "outputDirectory": "public",
+  "headers": [
+    {
+      "source": "/about",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=120, stale-while-revalidate=59"
+        }
+      ]
+    }
+  ]
 }
