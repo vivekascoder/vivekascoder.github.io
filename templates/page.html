@@ -1,0 +1,7 @@
+{% extends "index.html" %}
+
+{% block main_content %}
+    <link rel="stylesheet" href="{{ get_url(path='css/article-toc.css') }}">
+    {{ post_macros::content(page=page, extra=config.extra)}}
+    <script src="{{ get_url(path='js/article-toc.js') }}" defer></script>
+{% endblock main_content %}

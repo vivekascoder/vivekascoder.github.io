@@ -19,6 +19,13 @@ taxonomies = [
 
 [markdown]
 # Whether to do syntax highlighting
+insert_anchor_links = "none"
+
+[link_checker]
+internal_level = "error"
+
+[slugify]
+anchors = "on"
 
 [markdown.highlighting]
 enabled = true

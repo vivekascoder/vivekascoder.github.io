@@ -1,0 +1,110 @@
+.article-toc {
+    --toc-list-width: 16rem;
+    position: fixed;
+    right: max(1rem, calc((100vw - 800px) / 2 - 17rem));
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 80;
+}
+
+.article-toc[hidden] {
+    display: none;
+}
+
+.article-toc-mini {
+    align-items: center;
+    background-color: var(--background-primary-alt);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 0.5rem 0.35rem;
+}
+
+.article-toc:hover .article-toc-mini,
+.article-toc:focus-within .article-toc-mini {
+    display: none;
+}
+
+.article-toc-mini-link {
+    background-color: var(--text-faint);
+    border: 0;
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    opacity: 0.55;
+    transition: background-color 0.15s ease, opacity 0.15s ease, width 0.15s ease;
+    width: 0.85rem;
+}
+
+.article-toc-mini-link:hover,
+.article-toc-mini-link.is-active {
+    background-color: var(--text-accent);
+    opacity: 1;
+    width: 1.1rem;
+}
+
+.article-toc-list {
+    background-color: var(--background-primary-alt);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    box-shadow: 0 12px 30px var(--background-modifier-box-shadow, rgba(0, 0, 0, 0.1));
+    display: none;
+    flex-direction: column;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    padding: 0.55rem;
+    width: var(--toc-list-width);
+}
+
+.article-toc:hover .article-toc-list,
+.article-toc:focus-within .article-toc-list {
+    display: flex;
+}
+
+.article-toc-link {
+    border-bottom: none;
+    border-left: 2px solid transparent;
+    border-radius: 4px;
+    color: var(--text-muted);
+    display: block;
+    font-size: 0.85rem;
+    line-height: 1.35;
+    margin-block: 2px;
+    overflow: hidden;
+    padding: 0.3rem 0.45rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.article-toc-link:hover,
+.article-toc-link:focus,
+.article-toc-link.is-active {
+    background-color: var(--interactive-hover);
+    border-left-color: var(--text-accent);
+    color: var(--text-accent-hover);
+}
+
+.article-toc-level-1 {
+    padding-left: 0.45rem;
+}
+
+.article-toc-level-2 {
+    padding-left: 1rem;
+}
+
+.article-toc-level-3 {
+    padding-left: 1.55rem;
+}
+
+.article-toc-level-4,
+.article-toc-level-5 {
+    padding-left: 2.1rem;
+}
+
+@media screen and (max-width: 1279px) {
+    .article-toc {
+        display: none;
+    }
+}
