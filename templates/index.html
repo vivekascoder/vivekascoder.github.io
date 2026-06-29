@@ -55,6 +55,7 @@
                 }
 
                 .landing-about-intro img {
+                    flex-shrink: 0;
                     height: auto;
                     object-fit: contain;
                 }
@@ -66,11 +67,22 @@
                 @media (max-width: 600px) {
                     .landing-about-intro {
                         align-items: center;
-                        flex-direction: column;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
                     }
 
                     .landing-about-intro img {
-                        width: 150px;
+                        width: min(42vw, 150px);
+                    }
+
+                    .landing-secondary-gif {
+                        order: 2;
+                    }
+
+                    .landing-about-copy {
+                        flex-basis: 100%;
+                        order: 3;
                     }
                 }
             </style>
@@ -79,10 +91,11 @@
             <section class="landing-section landing-about">
                 <h1>{{ about_page.title }}</h1>
                 <div class="landing-about-intro">
-                    <img src="/pepe.jpg" alt="Author" width="100">
-                    <div>
+                    <img class="landing-primary-gif no-border" src="/icon-60.gif" alt="Author" width="100">
+                    <div class="landing-about-copy">
                         <p>Hey you, welcome to my corner of the internet, I'm a sucker for computer softwares and minimilist design. I do programming prostitution to pay my bills.<br>Contact me at <a href="mailto:me@vivek.ink">me@vivek.ink</a></p>
                     </div>
+                    <img class="landing-secondary-gif no-border" src="/tired-pepe-sleepy-pepe.gif" alt="Tired sleepy Pepe" width="100">
                 </div>
                 {{ about_page.content | safe }}
             </section>
