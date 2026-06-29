@@ -1,0 +1,8 @@
+name = "vivek.ink"
+compatibility_date = "2026-01-22"
+
+[build]
+command = "./scripts/vercel-build.sh"
+
+[assets]
+directory = "./public"
