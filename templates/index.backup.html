@@ -1,0 +1,66 @@
+{% import "macros/macros.html" as post_macros %}
+
+<!DOCTYPE html>
+<html lang="{{lang}}">
+{% include "partials/header.html" %}
+
+<body>
+    {% include "partials/head.html" %}
+    <div class="content">
+
+        {% block main_content %}
+        <main class="list">
+            <div class="flex-box" style="display: flex; justify-content: center; align-items:center;">
+                <div class="gif-box" style="max-width: 5rem;">
+                    <img class="no-border" src={{ get_url(path="img/kitty.gif") }} alt="Gif">
+                    <!-- <img class="no-border" src="https://fauux.neocities.org/JJJjjjjdDDD.gif" alt="Gif"> -->
+                </div>
+                <div class="site-description" style="flex-grow: 1;">
+                    {% if config.description %}
+                        {{ config.description | markdown | safe }}
+                    {% endif %}
+                </div>
+            </div>
+            <style>
+                @media only screen and (max-width: 600px) {
+                    .gif-box {
+                        display: none;
+                    }
+                }
+            </style>
+
+            {%- if paginator %}
+                {%- set show_pages = paginator.pages -%}
+            {% else %}
+                {% set section = get_section(path="posts/_index.md") %}
+                {%- set show_pages = section.pages -%}
+            {% endif -%}
+
+            {{ post_macros::list_posts(pages=show_pages, extra=config.extra) }}
+        </main>
+
+        {% if paginator %}
+            <ul class="pagination">
+                {% if paginator.previous %}
+                    <span class="page-item page-prev">
+                        <a href={{ paginator.previous }} class="page-link" aria-label="Previous"><span aria-hidden="true">{{ config.extra.translations[lang][0].previous_page }}</span></a>
+                    </span>
+                {% endif %}
+
+                {% if paginator.next %}
+                    <span class="page-item page-next">
+                        <a href={{ paginator.next }} class="page-link" aria-label="Next"><span aria-hidden="true">{{ config.extra.translations[lang][0].next_page }}</span></a>
+                    </span>
+                {% endif %}
+            </ul>
+        {% endif %}
+
+        {% endblock main_content %}
+
+        {% include "partials/footer.html" %}
+    </div>
+    <script src="/js/move.js"></script>
+    <script src={{ get_url(path="js/main.js") }}></script>
+</body>
+
+</html>

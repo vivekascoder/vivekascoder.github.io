@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block main_content %}
+<main class="list">
+    <div class="flex-box" style="display: flex; justify-content: center; align-items:center;">
+        <div class="gif-box" style="max-width: 5rem;">
+            <img class="no-border" src={{ get_url(path="img/kitty.gif") }} alt="Gif">
+        </div>
+        <div class="site-description" style="flex-grow: 1;">
+            {% if config.description %}
+                {{ config.description | markdown | safe }}
+            {% endif %}
+        </div>
+    </div>
+    <style>
+        @media only screen and (max-width: 600px) {
+            .gif-box {
+                display: none;
+            }
+        }
+    </style>
+
+    {% set section = get_section(path="posts/_index.md") %}
+    {{ post_macros::list_posts(pages=section.pages, extra=config.extra) }}
+</main>
+{% endblock main_content %}

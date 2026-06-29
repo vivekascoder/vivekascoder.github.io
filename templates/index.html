@@ -1,0 +1,134 @@
+{% import "macros/macros.html" as post_macros %}
+
+<!DOCTYPE html>
+<html lang="{{lang}}">
+{% include "partials/header.html" %}
+
+<body>
+    {% include "partials/head.html" %}
+    <div class="content">
+
+        {% block main_content %}
+        <main class="list landing-page">
+            <style>
+                .landing-section {
+                    margin-bottom: 2.5rem;
+                }
+
+                .landing-section > h1:first-child {
+                    margin-top: 1.5rem;
+                }
+
+                .landing-latest > ul {
+                    padding-left: 0;
+                }
+
+                .landing-latest .list-item .title {
+                    font-size: 1.15rem;
+                    margin-bottom: 0.25rem;
+                }
+
+                .landing-latest .list-item .description {
+                    margin-top: 0;
+                }
+
+                .landing-see-more {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 1rem;
+                }
+
+                .landing-about #adult-briefcase-hire-me,
+                .landing-about #adult-briefcase-hire-me + blockquote {
+                    display: none;
+                }
+
+                .landing-about .about-intro {
+                    display: none !important;
+                }
+
+                .landing-about-intro {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+
+                .landing-about-intro img {
+                    height: auto;
+                    object-fit: contain;
+                }
+
+                .landing-about .project-card {
+                    min-height: 5.775rem;
+                }
+
+                @media (max-width: 600px) {
+                    .landing-about-intro {
+                        align-items: center;
+                        flex-direction: column;
+                    }
+
+                    .landing-about-intro img {
+                        width: 150px;
+                    }
+                }
+            </style>
+
+            {% set about_page = get_page(path="custom/about.md") %}
+            <section class="landing-section landing-about">
+                <h1>{{ about_page.title }}</h1>
+                <div class="landing-about-intro">
+                    <img src="/pepe.jpg" alt="Author" width="100">
+                    <div>
+                        <p>Hey you, welcome to my corner of the internet, I'm a sucker for computer softwares and minimilist design. I do programming prostitution to pay my bills.<br>Contact me at <a href="mailto:me@vivek.ink">me@vivek.ink</a></p>
+                    </div>
+                </div>
+                {{ about_page.content | safe }}
+            </section>
+
+            {% set posts = get_section(path="posts/_index.md") %}
+            <section class="landing-section landing-latest">
+                <h1>Latest articles</h1>
+                <ul>
+                    {% for page in posts.pages %}
+                    {% if loop.index > 3 %}
+                    {% break %}
+                    {% endif %}
+                    {% if page.draft %}
+                    {% continue %}
+                    {% endif %}
+
+                    <section class="list-item">
+                        <h1 class="title">
+                            <a href={{ page.permalink }}>{{ page.title }}</a>
+                        </h1>
+                        {% if page.extra.author %}
+                        <span>{{ config.extra.translations[lang][0].posted_by }} <a href="{{ page.extra.author.social }}" target="_blank">{{ page.extra.author.name }}</a></span>
+                        {% endif %}
+
+                        <div class="description">
+                            {% if page.description %}
+                            {{ page.description }}
+                            {% elif page.summary %}
+                            {{ page.summary }}&hellip;
+                            {% endif %}
+                        </div>
+                    </section>
+                    {% endfor %}
+                </ul>
+
+                <div class="landing-see-more">
+                    <a href="{{ get_url(path='blog') }}">See more articles ➡</a>
+                </div>
+            </section>
+        </main>
+        {% endblock main_content %}
+
+        {% include "partials/footer.html" %}
+    </div>
+    <script src="/js/move.js"></script>
+    <script src={{ get_url(path="js/main.js") }}></script>
+</body>
+
+</html>
