@@ -9,9 +9,10 @@ tags = ["design", "minimilism", "ui/ux"]
 
 ## Tech behind it
 - **Static Site Generator**: This site is powered by [Zola](https://github.com/getzola/zola), a static site generator written in Rust. I started using Zola in 2022 and kept onto it since then.
-- The theme is built on top of a [Archie Zola](https://github.com/XXXMrG/archie-zola), but since using Archie, I've customize it so much that it looks a ot different from the original theme (read more about ui below).
-- Comments: Comments are built using [utteranc](https://utteranc.es/), it's a github bot that uses github issues to store comments, it comes with github auth so you don't need to do anything, just link with github repo and you're done.
-- Analytics: For analytics we're using Google Analytics, but I really move move away from it.
+- **Colors**: The theme is built on top of a [Archie Zola](https://github.com/XXXMrG/archie-zola), but since using Archie, I've customize it so much that it looks a ot different from the original theme (read more about ui below).
+- **Comments**: Comments are built using [utteranc](https://utteranc.es/), it's a github bot that uses github issues to store comments, it comes with github auth so you don't need to do anything, just link with github repo and you're done.
+- **Analytics**: For analytics we're using Google Analytics, but I really move move away from it.
+- **Deployment**: This site currently lives on Cloudflare workers, before this it has lived on EC2 instance, vercel, railway.
 
 ## UI and Design choices
 
@@ -60,13 +61,11 @@ tags = ["design", "minimilism", "ui/ux"]
     - Content: Source Sans 3 (From adobe)
     - Code: SF Mono (From apple)
 - Background pattern
+
 ```css
 :root {
     --background-primary: #ffffff;
-    --background-pattern: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24'
-    xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23808080' fill-opacity='0.2' fill-
-    rule='evenodd'%3E%3Ccircle cx='0' cy='0' r='1.5'/%3E%3Ccircle cx='24' cy='0' r='1.5'/%3E%3Ccircle
-    cx='0' cy='24' r='1.5'/%3E%3Ccircle cx='24' cy='24' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+    --background-pattern: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23808080' fill-opacity='0.2' fill-rule='evenodd'%3E%3Ccircle cx='0' cy='0' r='1.5'/%3E%3Ccircle cx='24' cy='0' r='1.5'/%3E%3Ccirclecx='0' cy='24' r='1.5'/%3E%3Ccircle cx='24' cy='24' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 body {
