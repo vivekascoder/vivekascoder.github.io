@@ -3,10 +3,12 @@ function setTheme(mode) {
     if (mode === "dark") {
         document.getElementById("darkModeStyle").disabled=false;
         document.getElementById("dark-mode-toggle").innerHTML = "<i data-feather=\"sun\"></i>";
+        document.getElementById("dark-mode-toggle").setAttribute("aria-label", "Switch to light mode");
         feather.replace()
     } else if (mode === "light") {
         document.getElementById("darkModeStyle").disabled=true;
         document.getElementById("dark-mode-toggle").innerHTML = "<i data-feather=\"moon\"></i>";
+        document.getElementById("dark-mode-toggle").setAttribute("aria-label", "Switch to dark mode");
         feather.replace()
     }
 }
@@ -19,5 +21,5 @@ function toggleTheme() {
     }
 }
 
-var savedTheme = localStorage.getItem("theme-storage") || "light";
+var savedTheme = localStorage.getItem("theme-storage") || "dark";
 setTheme(savedTheme);

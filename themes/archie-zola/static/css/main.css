@@ -294,6 +294,7 @@ header.scrolled {
 }
 
 header nav {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
@@ -315,6 +316,31 @@ header nav a {
 
 header nav a {
     padding: 0.25rem 0.5rem;
+}
+
+.theme-toggle {
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    color: var(--text-accent);
+    cursor: pointer;
+    display: inline-flex;
+    height: 2rem;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+    width: 2rem;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+    background-color: var(--interactive-hover);
+    color: var(--text-accent-hover);
+    outline: none;
+}
+
+.theme-toggle svg {
+    height: 1.1rem;
+    width: 1.1rem;
 }
 
 header .main a {

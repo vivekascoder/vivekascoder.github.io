@@ -54,7 +54,7 @@ author = "Vivek"
 # ]
 # after_dark_title = "🌈 I am Vivek"
 # control dark mode: auto | dark | toggle
-mode = "dark"
+mode = "toggle"
 
 # interal CDN resource
 useCDN = false
