@@ -8,34 +8,26 @@
     </div>
 
     <section class="projects-section">
-        <div class="projects-section-header">
-            <h2>Active builds</h2>
-            <span>{{ projects.active | length }} projects</span>
-        </div>
         <ul class="project-list">
             {% for project in projects.active %}
             <li class="project-list-item">
                 <time>{{ project.start }}</time>
                 <div class="project-list-content">
-                    <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+                    <div class="project-list-title">
+                        <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+                    </div>
                     <p>{{ project.description }}</p>
                 </div>
             </li>
             {% endfor %}
-        </ul>
-    </section>
-
-    <section class="projects-section">
-        <div class="projects-section-header">
-            <h2>Archived projects</h2>
-            <span>{{ projects.archived | length }} projects</span>
-        </div>
-        <ul class="project-list">
             {% for project in projects.archived %}
             <li class="project-list-item">
                 <time>{{ project.start }}</time>
                 <div class="project-list-content">
-                    <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+                    <div class="project-list-title">
+                        <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+                        <span class="project-status project-status-archived">Archived</span>
+                    </div>
                     <p>{{ project.description }}</p>
                 </div>
             </li>

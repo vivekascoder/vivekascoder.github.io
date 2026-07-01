@@ -592,25 +592,6 @@ summary {
     margin-bottom: 2.5rem;
 }
 
-.projects-section-header {
-    align-items: baseline;
-    border-bottom: 1px solid var(--background-modifier-border);
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.projects-section-header h2 {
-    margin-bottom: 0.5rem;
-}
-
-.projects-section-header span {
-    color: var(--text-faint);
-    font-size: 0.9rem;
-    white-space: nowrap;
-}
-
 .project-list {
     display: flex;
     flex-direction: column;
@@ -643,6 +624,13 @@ summary {
     line-height: 1.45;
 }
 
+.project-list-title {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 .project-list-content a {
     color: var(--text-normal);
     font-family: "Instrument Serif", serif;
@@ -657,6 +645,20 @@ summary {
 .project-list-content p {
     color: var(--text-muted);
     margin: 0.35rem 0 0;
+}
+
+.project-status {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 999px;
+    color: var(--text-faint);
+    font-size: 0.72rem;
+    line-height: 1;
+    padding: 0.2rem 0.45rem;
+}
+
+.project-status-archived {
+    background-color: var(--interactive-normal);
+    color: var(--text-faint);
 }
 
 @media screen and (max-width: 760px) {
