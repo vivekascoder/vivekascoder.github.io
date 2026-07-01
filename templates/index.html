@@ -38,6 +38,10 @@
                     margin-top: 1rem;
                 }
 
+                .landing-builds .project-grid {
+                    margin-bottom: 0.75rem;
+                }
+
                 .landing-about #adult-briefcase-hire-me,
                 .landing-about #adult-briefcase-hire-me + blockquote {
                     display: none;
@@ -88,6 +92,7 @@
             </style>
 
             {% set about_page = get_page(path="custom/about.md") %}
+            {% set projects = load_data(path="data/projects.toml") %}
             <section class="landing-section landing-about">
                 <h1>{{ about_page.title }}</h1>
                 <div class="landing-about-intro">
@@ -98,6 +103,25 @@
                     <img class="landing-secondary-gif no-border" src="/tired-pepe-sleepy-pepe.gif" alt="Tired sleepy Pepe" width="100">
                 </div>
                 {{ about_page.content | safe }}
+            </section>
+
+            <section class="landing-section landing-builds">
+                <h1>🏗 Builds</h1>
+                <div class="project-grid">
+                    {% for project in projects.active %}
+                    {% if loop.index > 3 %}
+                    {% break %}
+                    {% endif %}
+                    <a class="project-card" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
+                        <strong>{{ project.title }}</strong>
+                        <span>{{ project.description }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
+
+                <div class="landing-see-more">
+                    <a class="see-more-link" href="{{ get_url(path='projects') }}">All projects <span aria-hidden="true">→</span></a>
+                </div>
             </section>
 
             {% set posts = get_section(path="posts/_index.md") %}
