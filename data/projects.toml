@@ -2,43 +2,37 @@
 start = "Jun 2023"
 title = "🐙 Tiny Lang"
 url = "https://tiny-lang.vivek.ink/"
-description = "Tiny lang is a type safe programming language."
+description = "Tiny Lang is a type safe, compiled toy programming language written in Rust that uses LLVM."
 
 [[active]]
 start = "Jun 2026"
-title = "Tiny Eval"
+title = "🧪 Tiny Eval"
 url = "https://tiny-eval.vercel.app"
 description = "Compact coding-agent benchmarks from historical GitHub PRs."
 
 [[active]]
 start = "May 2026"
-title = "CmdTab"
+title = "🔀 CmdTab"
 url = "https://cmd-tab.vercel.app/"
 description = "Use the unused Command key for the thing you do all day: switching apps."
 
 [[active]]
 start = "Jun 2026"
-title = "TrackMeDaddy"
+title = "🏋️ TrackMeDaddy"
 url = "http://trackmedaddy.vivek.ink/"
 description = "Simple workout tracking. Log sets, see progress."
 
 [[active]]
 start = "Oct 2025"
-title = "tiny-mute"
+title = "🔇 tiny-mute"
 url = "https://github.com/vivekascoder/tiny-mute"
 description = "Dockerized HFT trading setup with exchange switching and Bollinger-band strategy work."
 
 [[active]]
 start = "May 2026"
-title = "x-research"
+title = "🔎 x-research"
 url = "https://xresearch.vivek.ink/"
 description = "Let AI agents do deep research on twitter without paying."
-
-[[active]]
-start = "Sep 2021"
-title = "📈 Liquibrium"
-url = "https://www.youtube.com/watch?v=zzab0qFDhwo"
-description = "DEX for stable/similar assets to swap at v low slippage on tezos."
 
 [[archived]]
 start = "Aug 2022"
@@ -59,8 +53,14 @@ url = "https://www.youtube.com/watch?v=AwGJwABjTR4"
 description = "Launch your NFT collections on Tezos and list on Objkt and Rarible."
 
 [[archived]]
+start = "Sep 2021"
+title = "📈 Liquibrium"
+url = "https://www.youtube.com/watch?v=zzab0qFDhwo"
+description = "DEX for stable/similar assets to swap at v low slippage on tezos."
+
+[[archived]]
 start = "Sep 2022"
-title = "{} DeadJson"
+title = "💀 {} DeadJson"
 url = "https://github.com/vivekascoder/dead_json"
 description = "Simple Json parser implementation in Ts."
 
