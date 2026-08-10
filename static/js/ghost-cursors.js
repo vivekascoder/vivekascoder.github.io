@@ -151,15 +151,32 @@
     window.dispatchEvent(new CustomEvent("ghost-cursors:ready", { detail: { version: VERSION } }));
   }
   var frame = 0;
-  window.addEventListener("pointermove", (event) => {
-    lastPosition = { x: event.clientX / innerWidth, y: event.clientY / innerHeight };
+  function updatePosition(clientX, clientY) {
+    lastPosition = { x: clientX / innerWidth, y: clientY / innerHeight };
     cancelAnimationFrame(frame);
     frame = requestAnimationFrame(() => {
       if (socket?.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({ type: "move", ...lastPosition }));
       }
     });
+  }
+  window.addEventListener("pointermove", (event) => {
+    updatePosition(event.clientX, event.clientY);
   });
+  function updateTouchPosition(event) {
+    const touches = event.touches.length > 0 ? event.touches : event.changedTouches;
+    if (touches.length === 0)
+      return;
+    let clientX = 0;
+    let clientY = 0;
+    for (const touch of touches) {
+      clientX += touch.clientX;
+      clientY += touch.clientY;
+    }
+    updatePosition(clientX / touches.length, clientY / touches.length);
+  }
+  window.addEventListener("touchstart", updateTouchPosition, { passive: true });
+  window.addEventListener("touchmove", updateTouchPosition, { passive: true });
   window.addEventListener("resize", () => cursors.forEach(render));
   var GhostCursors = Object.freeze({
     version: VERSION,
