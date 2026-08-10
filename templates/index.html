@@ -167,6 +167,10 @@
     </div>
     <script src="/js/move.js"></script>
     <script src={{ get_url(path="js/main.js") }}></script>
+    <script>
+        window.GhostCursorsConfig = { url: "wss://ghost-cursors.vivek.ink/ws" };
+    </script>
+    <script src="{{ get_url(path='js/ghost-cursors.js') }}" defer></script>
 </body>
 
 </html>
