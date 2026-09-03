@@ -1,25 +1,17 @@
 # vivekascoder.github.io
 
-## Some info on lines
-`hl_lines=1`: Highlight line.
-hide_lines=1-2
+A Zola-powered personal website for Vivek.
 
+Quick links
+- Live site: https://vivek.ink
+- Configuration: config.toml
+- Content (pages & posts): content/
+- Templates: templates/
+- Static assets (images, css, js): static/
+- Build locally: install Zola and run `zola serve` (or `zola build`)
+- Deployment config: vercel.json
 
-## Google analytics link
-https://analytics.google.com/analytics/web/#/p286159019/realtime/overview
+Contributing
+- Fixes, improvements and issues are welcome. Open a PR or an issue.
 
-
-## Article template
-
-```md
-+++
-title = "Something goes here."
-description = "Write some description here."
-date = 2022-10-14
-
-[taxonomies]
-tags = ["editor"]
-+++
-
-## Intro
-```
+This README was simplified to make common links easy to find.
